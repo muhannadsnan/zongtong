@@ -12,10 +12,7 @@
 - Purpose: Reduce player-side unit count for smoother online play
 
 ### v2.1.4 (2026-01-04)
-- MSN Soldier buffed +20%:
-  - Strength: 300 → 360
-  - Cost: 10000 → 12000
-  - Damage: 1000 → 1200 (both normal and elite)
+- MSN Soldier buffed +20%: Strength 300→360, Cost 10000→12000, Damage 1000→1200
 
 ### v2.1.3 (original modified version)
 - All unit Strength multiplied by 10x (units are tankier)
