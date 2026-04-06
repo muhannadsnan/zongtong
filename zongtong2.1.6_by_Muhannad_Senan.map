@@ -1,6 +1,29 @@
 ; Map created with FinalAlert 2(tm) Mission Editor
 ; Get it at http://www.westwood.com
 ; note that all comments were truncated
+;
+; ============================================
+; CHANGELOG - zongtong by Muhannad Senan
+; ============================================
+;
+; v2.1.6 (2026-04-06)
+;   - All Cost doubled (200%) — price inflation, players produce fewer units
+;   - All Damage doubled (200%) — fewer units hit harder to compensate
+;   - Purpose: Reduce player-side unit count for smoother online play
+;
+; v2.1.4 (2026-01-04)
+;   - MSN Soldier buffed +20%: Strength 300->360, Cost 10000->12000, Damage 1000->1200
+;
+; v2.1.3 (original modified version)
+;   - All unit Strength multiplied by 10x (units are tankier)
+;   - All unit spawn counts divided by 10x (fewer units per wave)
+;   - AutocreateTime: 1 -> 10 (slower wave spawns)
+;   - Purpose: Reduce lag for online play with fewer, stronger units
+;
+; v2.0 (original by unknown)
+;   - Base zongtong map
+;
+; ============================================
 
 [Header]
 Width=45
@@ -23,7 +46,7 @@ Anim=GUNFIRE
 Range=5
 Speed=40
 Bright=yes
-Damage=65
+Damage=130
 Report=GrizzlyTankAttack
 Warhead=AP
 Projectile=Cannon
@@ -35,7 +58,7 @@ Burst=2
 Range=5
 Speed=40
 Bright=yes
-Damage=65
+Damage=130
 Report=GrizzlyTankAttack
 Warhead=GRIZAPE
 Projectile=Cannon
@@ -46,7 +69,7 @@ Anim=GUNFIRE
 Range=5.75
 Speed=40
 Bright=yes
-Damage=80
+Damage=160
 Report=RhinoTankAttack
 Warhead=HowitzerWH
 Projectile=Cannon
@@ -57,7 +80,7 @@ Anim=GUNFIRE
 Range=5.75
 Speed=40
 Bright=yes
-Damage=90
+Damage=180
 Report=RhinoTankAttack
 Warhead=AP
 Projectile=Cannon
@@ -69,7 +92,7 @@ Burst=2
 Range=5.75
 Speed=40
 Bright=yes
-Damage=90
+Damage=180
 Report=RhinoTankAttack
 Warhead=RHINAPE
 Projectile=Cannon
@@ -81,7 +104,7 @@ Burst=2
 Range=5.75
 Speed=40
 Bright=yes
-Damage=100
+Damage=200
 Report=ApocalypseAttackGround
 Warhead=ApocAP
 Projectile=Cannon
@@ -93,7 +116,7 @@ Burst=4
 Range=5.75
 Speed=40
 Bright=yes
-Damage=100
+Damage=200
 Report=ApocalypseAttackGround
 Warhead=ApocAPE
 Projectile=Cannon
@@ -103,7 +126,7 @@ ROF=110
 Anim=GUNFIRE
 Range=8
 Speed=10
-Damage=60
+Damage=120
 Lobber=no
 Report=DestroyerAttack
 Warhead=ARTYHE
@@ -116,7 +139,7 @@ Anim=GUNFIRE
 Burst=2
 Range=8
 Speed=10
-Damage=60
+Damage=120
 Lobber=no
 Report=DestroyerAttack
 Warhead=ARTYHE
@@ -128,7 +151,7 @@ ROF=100
 Anim=GUNFIRE
 Range=12
 Speed=10
-Damage=90
+Damage=180
 Lobber=no
 Report=SeigeChopperAttackDeployed
 Warhead=SCHOPWH
@@ -141,7 +164,7 @@ Anim=GUNFIRE
 Burst=2
 Range=12
 Speed=10
-Damage=90
+Damage=180
 Lobber=no
 Report=SeigeChopperAttackDeployed
 Warhead=SCHOPWH
@@ -152,7 +175,7 @@ MinimumRange=0
 ROF=30
 Range=5
 Speed=100
-Damage=25
+Damage=50
 Report=RocketeerAttack
 Warhead=SSA
 Projectile=Invisible3
@@ -161,7 +184,7 @@ Projectile=Invisible3
 ROF=5
 Range=5
 Speed=100
-Damage=25
+Damage=50
 Report=RocketeerAttack
 Warhead=SSA
 Projectile=Invisible3
@@ -171,7 +194,7 @@ ROF=20
 Anim=GUNFIRE
 Range=5.5
 Speed=100
-Damage=30
+Damage=60
 Report=WarMinerAttack
 Warhead=HARVWH
 Projectile=InvisibleLow
@@ -182,14 +205,14 @@ Anim=GUNFIRE
 Range=5.75
 Speed=40
 Bright=yes
-Damage=50
+Damage=100
 Report=RhinoTankAttack
 Warhead=HowitzerWH
 Projectile=Cannon
 
 [4TNKTURRET]
 Name=Mammoth Tank Turret
-Damage=30
+Damage=60
 MaxZVel=38.0
 MinZVel=30.0
 Warhead=TankOGas
@@ -209,7 +232,7 @@ Anim=GUNFIRE
 Range=6
 Speed=40
 Bright=yes
-Damage=35
+Damage=70
 Warhead=AP
 Projectile=Cannon
 
@@ -219,7 +242,7 @@ Anim=GUNFIRE
 Range=5.75
 Speed=40
 Bright=yes
-Damage=75
+Damage=150
 Report=LightTankAttack
 Warhead=AP
 Projectile=Cannon
@@ -231,7 +254,7 @@ Burst=2
 Range=5.75
 Speed=40
 Bright=yes
-Damage=75
+Damage=150
 Report=LightTankAttack
 Warhead=GRIZAPE
 Projectile=Cannon
@@ -242,7 +265,7 @@ Anim=MGUN-N,MGUN-NE,MGUN-E,MGUN-SE,MGUN-S,MGUN-SW,MGUN-W,MGUN-NW
 Burst=2
 Range=12
 Speed=100
-Damage=30
+Damage=60
 Report=GattlingGunAttackLoop1
 Warhead=GattWH
 Projectile=Invisible4
@@ -253,7 +276,7 @@ Anim=GUNFIRE
 Burst=2
 Range=12
 Speed=100
-Damage=30
+Damage=60
 Report=GattlingGunAttackLoop2
 Warhead=GattWH
 Projectile=Invisible4
@@ -264,7 +287,7 @@ Anim=VTMUZZLE
 Burst=2
 Range=12
 Speed=100
-Damage=30
+Damage=60
 Report=GattlingGunAttackLoop3
 Warhead=GattWH
 Projectile=Invisible4
@@ -275,7 +298,7 @@ Anim=MGUN-N,MGUN-NE,MGUN-E,MGUN-SE,MGUN-S,MGUN-SW,MGUN-W,MGUN-NW
 Burst=2
 Range=8
 Speed=100
-Damage=25
+Damage=50
 Report=GattlingGunAttackLoop1
 Warhead=GattWH
 Projectile=Invisible4
@@ -286,7 +309,7 @@ Anim=GUNFIRE
 Burst=2
 Range=8
 Speed=100
-Damage=30
+Damage=60
 Report=GattlingGunAttackLoop2
 Warhead=GattWH
 Projectile=Invisible4
@@ -297,7 +320,7 @@ Anim=GUNFIRE
 Burst=2
 Range=8
 Speed=100
-Damage=25
+Damage=50
 Report=GattlingGunAttackLoop2
 Warhead=GattWH
 Projectile=Invisible4
@@ -308,7 +331,7 @@ Anim=VTMUZZLE
 Burst=2
 Range=8
 Speed=100
-Damage=40
+Damage=80
 Report=GattlingGunAttackLoop3
 Warhead=GattWH
 Projectile=Invisible4
@@ -319,7 +342,7 @@ Anim=VTMUZZLE
 Burst=2
 Range=8
 Speed=100
-Damage=25
+Damage=50
 Report=GattlingGunAttackLoop3
 Warhead=GattWH
 Projectile=Invisible4
@@ -330,7 +353,7 @@ Anim=MGUN-N,MGUN-NE,MGUN-E,MGUN-SE,MGUN-S,MGUN-SW,MGUN-W,MGUN-NW
 Burst=2
 Range=8
 Speed=100
-Damage=25
+Damage=50
 Report=GattlingGunAttackLoop1
 Warhead=GattWH
 Projectile=Invisible4
@@ -376,7 +399,7 @@ SubjectToElevation=no
 
 [ADOG]
 Pip=white
-Cost=200
+Cost=400
 Name=Allied Attack Dog
 Size=1
 Armor=none
@@ -398,7 +421,7 @@ Category=Soldier
 DieSound=DogDie
 NotHuman=yes
 Sequence=DogSequence
-Strength=15000
+Strength=1000
 Locomotor={4A582744-9839-11d1-B709-00A024DDAFD1}
 Remapable=yes
 Secondary=VirtualScanner
@@ -444,7 +467,7 @@ SubjectToElevation=no
 
 [AEGIS]
 ROT=1
-Cost=1200
+Cost=2400
 Name=Aegis Cruiser
 Size=30
 Armor=light
@@ -499,7 +522,7 @@ Anim=MGUN-N,MGUN-NE,MGUN-E,MGUN-SE,MGUN-S,MGUN-SW,MGUN-W,MGUN-NW
 Burst=2
 Range=5
 Speed=100
-Damage=25
+Damage=50
 Report=GattlingGunAttackLoop1
 Warhead=GattWH
 Projectile=Invisiblelow
@@ -510,7 +533,7 @@ Anim=GUNFIRE
 Burst=2
 Range=5
 Speed=100
-Damage=25
+Damage=50
 Report=GattlingGunAttackLoop2
 Warhead=SA
 Projectile=Invisiblelow
@@ -521,7 +544,7 @@ Anim=GUNFIRE
 Burst=2
 Range=5
 Speed=100
-Damage=25
+Damage=50
 Report=GattlingGunAttackLoop2
 Warhead=SA
 Projectile=Invisiblelow
@@ -532,7 +555,7 @@ Anim=VTMUZZLE
 Burst=2
 Range=5
 Speed=100
-Damage=25
+Damage=50
 Report=GattlingGunAttackLoop3
 Warhead=SSA
 Projectile=Invisiblelow
@@ -543,7 +566,7 @@ Anim=VTMUZZLE
 Burst=2
 Range=5
 Speed=100
-Damage=25
+Damage=50
 Report=GattlingGunAttackLoop3
 Warhead=SSA
 Projectile=Invisiblelow
@@ -554,7 +577,7 @@ Anim=MGUN-N,MGUN-NE,MGUN-E,MGUN-SE,MGUN-S,MGUN-SW,MGUN-W,MGUN-NW
 Burst=2
 Range=5
 Speed=100
-Damage=25
+Damage=50
 Report=GattlingGunAttackLoop1
 Warhead=GattWH
 Projectile=Invisiblelow
@@ -619,7 +642,7 @@ ComputerBaseDefenseResponse=3
 ROF=20
 Range=7
 Speed=100
-Damage=65
+Damage=130
 Report=BorisAttack
 Warhead=BORISWH
 Projectile=InvisibleLow
@@ -629,7 +652,7 @@ AssaultAnim=UCBLOOD
 ROF=20
 Range=9
 Speed=100
-Damage=90
+Damage=180
 Report=BorisAttack
 Warhead=BORISWH
 Projectile=InvisibleLow
@@ -637,7 +660,7 @@ AssaultAnim=UCBLOOD
 
 [ALL]
 Pip=yellow
-Cost=10
+Cost=20
 Name=Animal Alligator
 Size=2
 Armor=none
@@ -723,7 +746,7 @@ AllowedToStartInMultiplayer=no
 
 [AMCV]
 ROT=5
-Cost=3000
+Cost=6000
 Name=Allied Construction Vehicle
 Size=6
 Armor=heavy
@@ -788,7 +811,7 @@ SpecialThreatValue=1
 EligibleForDelayKill=yes
 
 [AMRADR]
-Cost=1000
+Cost=2000
 Name=Allied American Airforce Command Headquarters
 Armor=steel
 Image=GAAIRC
@@ -838,7 +861,7 @@ Name=
 
 [APOC]
 ROT=5
-Cost=1750
+Cost=3500
 Name=Apocalypse
 Size=6
 Armor=heavy
@@ -857,7 +880,7 @@ Soylent=1750
 Category=AFV
 DieSound=GenVehicleDie
 Explodes=yes
-Strength=240000
+Strength=8000
 Explosion=TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60
 Locomotor={4A582741-9839-11d1-B709-00A024DDAFD1}
 Maxdebris=3
@@ -908,7 +931,7 @@ PercentAtMax=.8
 
 [ARND]
 Pip=yellow
-Cost=10
+Cost=20
 Name=Arnie Frankenfurter
 Size=1
 Armor=plate
@@ -971,7 +994,7 @@ DeformThreshhold=120
 [ASW]
 ROT=5
 Ammo=1
-Cost=50
+Cost=100
 Name=Osprey
 Armor=light
 Cameo=PROICON
@@ -1020,7 +1043,7 @@ DamageParticleSystems=SparkSys,SmallGreySSys
 ROF=3
 Range=3
 Speed=30
-Damage=50
+Damage=100
 Report=OspreyAttack
 Warhead=APSplash
 Projectile=DepthCharge
@@ -1030,7 +1053,7 @@ ROF=20
 Range=3
 Speed=30
 Bright=yes
-Damage=100
+Damage=200
 Report=OspreyCollision
 Warhead=AP
 Projectile=AAHeatSeeker2
@@ -1039,7 +1062,7 @@ Projectile=AAHeatSeeker2
 ROF=150
 Range=-2
 Speed=10
-Damage=1
+Damage=2
 Spawner=yes
 Warhead=Special
 OmniFire=yes
@@ -1053,7 +1076,7 @@ SubjectToCliffs=no
 SubjectToElevation=no
 
 [ATESLA]
-Cost=1500
+Cost=3000
 Name=Allied Prism Cannon
 Armor=steel
 Image=GAPRIS
@@ -1100,7 +1123,7 @@ Anim=GUNFIRE
 Range=5
 Speed=60
 Bright=yes
-Damage=65
+Damage=130
 Report=LasherTankAttack
 Warhead=AP
 Projectile=Cannon
@@ -1112,7 +1135,7 @@ Burst=2
 Range=5
 Speed=60
 Bright=yes
-Damage=65
+Damage=130
 Report=TankDestroyerAttack
 Warhead=RHINAPE
 Projectile=Cannon
@@ -1166,7 +1189,7 @@ Airstrike=yes
 ROF=30
 Range=1.5
 Speed=100
-Damage=30
+Damage=60
 Report=AlligatorAttack
 Warhead=HollowPoint
 Projectile=InvisibleLow
@@ -1840,7 +1863,7 @@ Recruitable=yes
 ROF=25
 Range=1.83
 Speed=100
-Damage=10
+Damage=20
 Report=TeslaTroopRechargeCoil
 Warhead=ElectricAssault
 Projectile=InvisibleLow
@@ -1851,7 +1874,7 @@ IsAlternateColor=true
 ROF=50
 Range=5
 Speed=100
-Damage=40
+Damage=80
 Report=GIAttackDeployed
 Warhead=SA
 Projectile=InvisibleLow
@@ -2014,7 +2037,7 @@ PsychicDominatorActivateSound=PsychicDominatorActivate
 ROF=60
 Range=6
 Speed=25
-Damage=25
+Damage=50
 Report=FlakCannonAttack
 Warhead=AP
 Projectile=AAHeatSeeker2
@@ -2069,7 +2092,7 @@ AllowedToStartInMultiplayer=no
 [BEAG]
 ROT=3
 Ammo=1
-Cost=1200
+Cost=2400
 Dock=GAAIRC,AMRADR
 Name=Black Eagle
 Armor=light
@@ -2089,7 +2112,7 @@ DieSound=
 Landable=yes
 OmniFire=yes
 PipScale=Ammo
-Strength=60000
+Strength=2000
 Explosion=TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60
 Locomotor={4A582746-9839-11d1-B709-00A024DDAFD1}
 MaxDebris=3
@@ -2154,7 +2177,7 @@ DamageParticleSystems=SparkSys,LGSparkSys
 
 [BORIS]
 Pip=red
-Cost=1500
+Cost=3000
 Name=Boris
 Size=1
 Armor=flak
@@ -2173,7 +2196,7 @@ AltCameo=BRISUICO
 Category=Soldier
 DieSound=BorisDie
 Sequence=BorisSequence
-Strength=20000
+Strength=2000
 Assaulter=no
 Crushable=no
 Locomotor={4A582744-9839-11d1-B709-00A024DDAFD1}
@@ -2360,7 +2383,7 @@ NoUseTileLandType=false
 
 [BRUTE]
 Pip=white
-Cost=500
+Cost=1000
 Name=Yuri Brute
 Size=2
 Armor=plate
@@ -2379,7 +2402,7 @@ AltCameo=BRUTUICO
 Category=Soldier
 DieSound=BruteDie
 Sequence=BruteSequence
-Strength=60000
+Strength=2000
 Crushable=no
 Locomotor={4A582744-9839-11d1-B709-00A024DDAFD1}
 Remapable=yes
@@ -2415,7 +2438,7 @@ AllowedToStartInMultiplayer=no
 
 [BSUB]
 ROT=2
-Cost=2000
+Cost=4000
 Name=Yuri Boomer
 Size=20
 Armor=heavy
@@ -2583,7 +2606,7 @@ AllowedToStartInMultiplayer=no
 ROF=30
 Range=1.5
 Speed=30
-Damage=30
+Damage=60
 Report=DogAttack
 Warhead=ParasiteDog
 Projectile=DOGJUMP
@@ -2600,7 +2623,7 @@ SubjectToElevation=yes
 
 [BarrelExplosion]
 Anim=RING1
-Damage=200
+Damage=400
 Warhead=OilExplosionWH
 Projectile=Invisible
 
@@ -2624,7 +2647,7 @@ FloatBeach=100%
 ROF=30
 Range=1.5
 Speed=100
-Damage=30
+Damage=60
 Report=BearAttack
 Warhead=HollowPoint
 Projectile=InvisibleLow
@@ -2645,7 +2668,7 @@ SpawnTranslucencyCutoff=13.0
 ROF=60
 Range=5
 Speed=30
-Damage=40
+Damage=80
 Report=SeawolfAttack
 Warhead=AP
 Projectile=HeatSeeker
@@ -2655,7 +2678,7 @@ ROF=40
 Anim=MGUN-N,MGUN-NE,MGUN-E,MGUN-SE,MGUN-S,MGUN-SW,MGUN-W,MGUN-NW
 Range=6
 Speed=100
-Damage=35
+Damage=70
 Report=BlackOpsAttack
 Warhead=SA
 OmniFire=yes
@@ -2666,7 +2689,7 @@ ROF=40
 Anim=MGUN-N,MGUN-NE,MGUN-E,MGUN-SE,MGUN-S,MGUN-SW,MGUN-W,MGUN-NW
 Range=6
 Speed=100
-Damage=40
+Damage=80
 Report=BlackOpsAttack
 Warhead=SSA
 OmniFire=yes
@@ -2677,7 +2700,7 @@ ROF=50
 Burst=1
 Range=1.5
 Speed=20
-Damage=250
+Damage=500
 Report=KirovAttack
 Warhead=BlimpHE
 OmniFire=yes
@@ -2689,7 +2712,7 @@ ROF=50
 Burst=1
 Range=1.5
 Speed=20
-Damage=250
+Damage=500
 Report=KirovAttack
 Warhead=KTSTLEXP
 OmniFire=yes
@@ -2701,7 +2724,7 @@ ROF=50
 Burst=1
 Range=1.5
 Speed=20
-Damage=250
+Damage=500
 Report=KirovAttack
 Warhead=BlimpHEEffect
 OmniFire=yes
@@ -2760,7 +2783,7 @@ PercentAtMax=.5
 ROF=10
 Range=5
 Speed=0
-Damage=160
+Damage=320
 Floater=yes
 Warhead=ORCAHE
 Projectile=Cannon2
@@ -2773,7 +2796,7 @@ ROF=120
 Burst=2
 Range=7
 Speed=25
-Damage=60
+Damage=120
 Report=BoomerAttack2
 Warhead=APSplash2
 Projectile=Torpedo
@@ -2784,7 +2807,7 @@ ROF=120
 Burst=4
 Range=7
 Speed=18
-Damage=60
+Damage=120
 Report=BoomerAttack2
 Warhead=APSplash2
 Projectile=Torpedo
@@ -4695,7 +4718,7 @@ DamageFireOffset1=22,0
 MaxNumberOccupants=5
 
 [CAFNCB]
-Cost=25
+Cost=50
 Name=Fence Black
 Wall=yes
 Armor=wood
@@ -4726,7 +4749,7 @@ Prerequisite=BARRACKS
 Insignificant=yes
 
 [CAFNCP]
-Cost=25
+Cost=50
 Name=Fence Prison Camp
 Wall=yes
 Armor=wood
@@ -4757,7 +4780,7 @@ Prerequisite=BARRACKS
 Insignificant=yes
 
 [CAFNCW]
-Cost=25
+Cost=50
 Name=Fence White
 Wall=yes
 Armor=wood
@@ -5373,7 +5396,7 @@ ActiveAnimZAdjust=-100
 MaxNumberOccupants=0
 
 [CAKRMW]
-Cost=25
+Cost=50
 Name=Kremlen Walls
 Wall=yes
 Armor=wood
@@ -7221,7 +7244,7 @@ Insignificant=yes
 
 [CAML]
 Pip=yellow
-Cost=10
+Cost=20
 Name=Animal Camel
 Size=2
 Armor=none
@@ -8178,7 +8201,7 @@ CanHideThings=False
 Insignificant=yes
 
 [CAMSC12A]
-Cost=600
+Cost=1200
 Name=Bullseye 2
 Armor=wood
 Image=CAMSC12
@@ -9306,7 +9329,7 @@ ActiveAnimTwoZAdjust=-50
 
 [CAOS]
 ROT=40
-Cost=800
+Cost=1600
 Name=Chaos Drone
 Size=2
 Armor=light
@@ -9329,7 +9352,7 @@ Deployer=yes
 DieSound=ChaosDroneDie
 Explodes=no
 IsTilter=no
-Strength=60000
+Strength=2000
 Explosion=TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60
 Locomotor={4A582741-9839-11d1-B709-00A024DDAFD1}
 MaxDebris=2
@@ -10412,7 +10435,7 @@ DamageParticleSystems=SparkSys,SmallGreySSys
 
 [CARRIER]
 ROT=1
-Cost=2000
+Cost=4000
 Name=Aircraft Carrier
 Size=50
 Armor=heavy
@@ -14640,7 +14663,7 @@ AllowedToStartInMultiplayer=no
 
 [CCOMAND]
 Pip=red
-Cost=2000
+Cost=4000
 Name=Chrono Commando
 Armor=none
 Cameo=CCOMICON
@@ -14694,7 +14717,7 @@ AllowedToStartInMultiplayer=no
 
 [CDEST]
 ROT=5
-Cost=1000
+Cost=2000
 Name=Coast Guard Boat
 Armor=light
 Naval=yes
@@ -14865,7 +14888,7 @@ DamageParticleSystems=SmallGreySSys,BigGreySmokeSys
 
 [CIV1]
 Pip=yellow
-Cost=10
+Cost=20
 Name=Civilian
 Size=1
 Armor=none
@@ -14902,7 +14925,7 @@ AllowedToStartInMultiplayer=no
 
 [CIV2]
 Pip=yellow
-Cost=10
+Cost=20
 Name=Civilian
 Size=1
 Armor=none
@@ -14939,7 +14962,7 @@ AllowedToStartInMultiplayer=no
 
 [CIV3]
 Pip=yellow
-Cost=10
+Cost=20
 Name=Civilian
 Size=1
 Armor=none
@@ -14976,7 +14999,7 @@ AllowedToStartInMultiplayer=no
 
 [CIVA]
 Pip=yellow
-Cost=10
+Cost=20
 Name=Civilian Texan A
 Size=1
 Armor=none
@@ -15014,7 +15037,7 @@ AllowedToStartInMultiplayer=no
 
 [CIVAN]
 Pip=red
-Cost=1750
+Cost=3500
 Ivan=yes
 Name=Chrono Ivan
 Armor=none
@@ -15032,7 +15055,7 @@ Soylent=500
 Category=Soldier
 DieSound=CrazyIvanDie
 Sequence=CIvanSequence
-Strength=10000
+Strength=1000
 Crushable=no
 Locomotor={4A582747-9839-11d1-B709-00A024DDAFD1}
 Remapable=yes
@@ -15065,7 +15088,7 @@ AllowedToStartInMultiplayer=no
 
 [CIVB]
 Pip=yellow
-Cost=10
+Cost=20
 Name=Civilian Texan B
 Size=1
 Armor=none
@@ -15103,7 +15126,7 @@ AllowedToStartInMultiplayer=no
 
 [CIVBBP]
 Pip=yellow
-Cost=10
+Cost=20
 Name=Civilian Baseball Player
 Size=1
 Armor=none
@@ -15140,7 +15163,7 @@ AllowedToStartInMultiplayer=no
 
 [CIVBF]
 Pip=yellow
-Cost=10
+Cost=20
 Name=Civilian Beach Female
 Size=1
 Armor=none
@@ -15177,7 +15200,7 @@ AllowedToStartInMultiplayer=no
 
 [CIVBFM]
 Pip=yellow
-Cost=10
+Cost=20
 Name=Civilian Beach Fat Male
 Size=1
 Armor=none
@@ -15214,7 +15237,7 @@ AllowedToStartInMultiplayer=no
 
 [CIVBTM]
 Pip=yellow
-Cost=10
+Cost=20
 Name=Civilian Beach Thin Male
 Size=1
 Armor=none
@@ -15251,7 +15274,7 @@ AllowedToStartInMultiplayer=no
 
 [CIVC]
 Pip=yellow
-Cost=10
+Cost=20
 Name=Civilian Texan C
 Size=1
 Armor=none
@@ -15334,7 +15357,7 @@ AllowedToStartInMultiplayer=no
 
 [CIVSF]
 Pip=yellow
-Cost=10
+Cost=20
 Name=Civilian Snow Female
 Size=1
 Armor=none
@@ -15371,7 +15394,7 @@ AllowedToStartInMultiplayer=no
 
 [CIVSFM]
 Pip=yellow
-Cost=10
+Cost=20
 Name=Civilian Snow Fat Male
 Size=1
 Armor=none
@@ -15408,7 +15431,7 @@ AllowedToStartInMultiplayer=no
 
 [CIVSTM]
 Pip=yellow
-Cost=10
+Cost=20
 Name=Civilian Snow Thin Male
 Size=1
 Armor=none
@@ -15445,7 +15468,7 @@ AllowedToStartInMultiplayer=no
 
 [CLEG]
 Pip=red
-Cost=1500
+Cost=3000
 Name=Chrono Legionnaire
 Size=1
 Armor=none
@@ -15465,7 +15488,7 @@ Bombable=yes
 Category=Soldier
 DieSound=ChronoLegionDie
 Sequence=ClegSequence
-Strength=12500
+Strength=1250
 Crushable=no
 Locomotor={4A582747-9839-11d1-B709-00A024DDAFD1}
 Remapable=yes
@@ -15498,7 +15521,7 @@ AllowedToStartInMultiplayer=no
 ROF=10
 Range=6
 Speed=100
-Damage=125
+Damage=250
 Report=ClintAttack
 Warhead=HollowPoint
 Projectile=InvisibleLow
@@ -15506,7 +15529,7 @@ AssaultAnim=UCBLOOD
 
 [CLNT]
 Pip=yellow
-Cost=10
+Cost=20
 Name=Flint Westwood
 Size=1
 Armor=plate
@@ -15552,7 +15575,7 @@ AllowedToStartInMultiplayer=no
 
 [CMIN]
 ROT=5
-Cost=1400
+Cost=2800
 Dock=NAREFN,GAREFN
 Name=Chrono Miner
 Size=3
@@ -15617,7 +15640,7 @@ AllowedToStartInMultiplayer=no
 [CMISL]
 ROT=4
 Ammo=1
-Cost=50
+Cost=100
 Name=Cruise Missile
 Armor=special_2
 Image=BSUBMISL
@@ -15686,7 +15709,7 @@ DeformThreshhold=300
 
 [CMON]
 ROT=5
-Cost=1400
+Cost=2800
 Dock=NAREFN,GAREFN
 Name=Chrono Miner(noback)
 Armor=medium
@@ -15826,7 +15849,7 @@ AllowedToStartInMultiplayer=no
 
 [COW]
 Pip=yellow
-Cost=10
+Cost=20
 Name=Animal Cow
 Size=2
 Armor=none
@@ -15975,7 +15998,7 @@ Theater=yes
 ROF=100
 Range=14
 Speed=100
-Damage=250
+Damage=500
 Report=SILENCER
 Warhead=HollowPoint2
 Projectile=InvisibleLow
@@ -15985,7 +16008,7 @@ RevealOnFire=no
 ROF=30
 Range=8
 Speed=25
-Damage=35
+Damage=70
 Report=FlakCannonAttack
 Warhead=AP
 Projectile=AAHeatSeeker2
@@ -15994,7 +16017,7 @@ Projectile=AAHeatSeeker2
 ROF=45
 Range=6
 Speed=100
-Damage=60
+Damage=120
 Report=TeslaTankAttack
 Warhead=Shock
 Projectile=InvisibleLow
@@ -16006,7 +16029,7 @@ ROF=15
 Anim=GUNFIRE
 Range=7
 Speed=50
-Damage=30
+Damage=60
 Report=FlakTrackAttackGround
 Warhead=FlakTWH
 Projectile=FlakTProj
@@ -16015,7 +16038,7 @@ Projectile=FlakTProj
 ROF=15
 Range=6
 Speed=100
-Damage=30
+Damage=60
 Report=GIAttack
 Warhead=SA
 Projectile=InvisibleLow
@@ -16025,7 +16048,7 @@ ROF=15
 Anim=MGUN-N,MGUN-NE,MGUN-E,MGUN-SE,MGUN-S,MGUN-SW,MGUN-W,MGUN-NW
 Range=6
 Speed=100
-Damage=25
+Damage=50
 Report=IFVAttackGround
 Warhead=SSA
 Projectile=InvisibleLow
@@ -16034,7 +16057,7 @@ Projectile=InvisibleLow
 ROF=10
 Range=7
 Speed=100
-Damage=125
+Damage=250
 Report=SealAttack
 Warhead=HollowPoint3
 Projectile=InvisibleLow
@@ -16044,7 +16067,7 @@ AssaultAnim=UCBLOOD
 ROF=100
 Range=-2
 Speed=100
-Damage=1
+Damage=2
 Report=MirageTankDisguise
 Warhead=TankSnapshot
 FireOnce=yes
@@ -16056,7 +16079,7 @@ ROF=10
 Anim=RING1
 Range=1
 Speed=1
-Damage=200
+Damage=400
 Report=YuriDeploy
 Warhead=PsiPulse
 AreaFire=yes
@@ -16067,7 +16090,7 @@ ROF=40
 Burst=2
 Range=8
 Speed=30
-Damage=30
+Damage=60
 Report=GuardianGIDeployedAttack
 Warhead=GUARDWH
 Projectile=AAHeatSeeker2
@@ -16086,7 +16109,7 @@ PercentAtMax=.25
 ROF=120
 Range=6
 Speed=100
-Damage=5
+Damage=10
 Report=ChronoLegionAttack
 Warhead=ChronoBeam
 IsRadBeam=yes
@@ -16096,7 +16119,7 @@ Projectile=InvisibleLow
 ROF=80
 Range=1
 Speed=35
-Damage=200
+Damage=400
 Report=NukeExplosion
 Suicide=yes
 Warhead=CRNUKEWH
@@ -16107,7 +16130,7 @@ Projectile=InvisibleLow
 ROF=15
 Range=6.5
 Speed=100
-Damage=25
+Damage=50
 Report=InitiateAttack
 Warhead=SAFlame
 Projectile=InvisibleLow
@@ -16116,7 +16139,7 @@ Projectile=InvisibleLow
 ROF=30
 Range=7
 Speed=100
-Damage=175
+Damage=350
 Report=DesolatorAttack
 Warhead=RadBeamWarhead
 IsRadBeam=yes
@@ -16127,7 +16150,7 @@ ROF=50
 Anim=RING1
 Range=1
 Speed=1
-Damage=250
+Damage=500
 Report=YuriDeploy
 Warhead=SuperPsiPulse
 AreaFire=yes
@@ -16138,7 +16161,7 @@ Projectile=Psychic
 ROF=10
 Anim=RING1
 Range=1.5
-Damage=250
+Damage=500
 Suicide=yes
 Warhead=TerrorBombWH
 Projectile=Invisible
@@ -16207,7 +16230,7 @@ AllowedToStartInMultiplayer=no
 ROF=80
 Range=12
 Speed=100
-Damage=125
+Damage=250
 Report=VirusAttack
 Warhead=Virus
 Projectile=InvisibleLow
@@ -16215,7 +16238,7 @@ RevealOnFire=no
 
 [CRYSTAL01]
 Name=TiberiumCrystal01
-Damage=40
+Damage=80
 MaxZVel=32.0
 MinZVel=28.0
 Warhead=TankOGas
@@ -16233,7 +16256,7 @@ MinAngularVelocity=12.0
 [CRYSTAL02]
 Name=TiberiumCrystal02
 Image=GASTANK
-Damage=40
+Damage=80
 MaxZVel=45.0
 MinZVel=40.0
 Warhead=TankOGas
@@ -16248,7 +16271,7 @@ MinAngularVelocity=12.0
 
 [CTECH]
 Pip=yellow
-Cost=10
+Cost=20
 Name=Technician
 Size=1
 Armor=none
@@ -16303,7 +16326,7 @@ Recruitable=no
 ROF=30
 Range=3
 Speed=30
-Damage=600
+Damage=1200
 Report=ChaosDroneAttack
 Warhead=PsychGasCreate
 AreaFire=yes
@@ -16314,7 +16337,7 @@ Projectile=InvisibleLow
 ROF=1
 Range=6
 Speed=30
-Damage=100
+Damage=200
 Report=ICBM1
 Warhead=Gas
 Projectile=ChemMissile
@@ -16335,7 +16358,7 @@ IgnoresFirestorm=yes
 ROF=30
 Range=1.5
 Speed=100
-Damage=30
+Damage=60
 Report=ChimpAttack
 Warhead=HollowPoint
 Projectile=InvisibleLow
@@ -16349,7 +16372,7 @@ Temporal=yes
 ROF=10
 Range=6
 Speed=100
-Damage=125
+Damage=250
 Report=SealAttack
 Warhead=HollowPointNoBuilding
 Projectile=InvisibleLow
@@ -16358,7 +16381,7 @@ Projectile=InvisibleLow
 ROF=10
 Range=6
 Speed=100
-Damage=125
+Damage=250
 Report=SealAttack
 Warhead=HollowPointNoBuilding
 Projectile=InvisibleLow
@@ -16420,7 +16443,7 @@ Proximity=yes
 ROF=80
 Range=7
 Speed=100
-Damage=200
+Damage=400
 Report=TeslaCoilAttack
 Warhead=Electric
 Projectile=Invisible
@@ -16556,7 +16579,7 @@ ROF=100
 Range=10
 Speed=40
 Bright=yes
-Damage=100
+Damage=200
 Report=PrismTankAttack
 IsLaser=true
 Warhead=CometWH
@@ -16570,7 +16593,7 @@ ROF=120
 Range=3
 Speed=10
 Bright=yes
-Damage=30
+Damage=60
 IsLaser=true
 Warhead=CometWH
 Projectile=SmallCometP
@@ -16602,7 +16625,7 @@ MindControl=yes
 ROF=75
 Range=12
 Speed=100
-Damage=300
+Damage=600
 Report=IFVCowshot
 IsLaser=true
 Warhead=PrismWarhead
@@ -16646,7 +16669,7 @@ ROF=50
 Burst=2
 Range=20
 Speed=15
-Damage=25
+Damage=50
 Report=BoomerAttack1
 Spawner=yes
 Warhead=Special
@@ -16659,7 +16682,7 @@ ROF=50
 Burst=1
 Range=20
 Speed=40
-Damage=25
+Damage=50
 Report=SeawolfAttack
 Warhead=HE
 Projectile=NavalToGroundSeeker
@@ -16680,7 +16703,7 @@ PenetratesBunker=yes
 ROF=50
 Range=7
 Speed=70
-Damage=120
+Damage=240
 Report=scrin5b
 Warhead=PlasmaWH
 Projectile=ProtonBlast
@@ -16735,7 +16758,7 @@ AllowedToStartInMultiplayer=no
 
 [DESO]
 Pip=red
-Cost=600
+Cost=1200
 Name=Desolater
 Size=1
 Armor=plate
@@ -16757,7 +16780,7 @@ Deployer=yes
 DieSound=DesolatorDie
 Fearless=yes
 Sequence=DesoSequence
-Strength=45000
+Strength=1500
 Crushable=no
 Locomotor={4A582744-9839-11d1-B709-00A024DDAFD1}
 Remapable=yes
@@ -16787,7 +16810,7 @@ AllowedToStartInMultiplayer=no
 
 [DEST]
 ROT=5
-Cost=1000
+Cost=2000
 Name=Destroyer
 Size=30
 Armor=heavy
@@ -16845,7 +16868,7 @@ AllowedToStartInMultiplayer=no
 
 [DISK]
 ROT=100
-Cost=1750
+Cost=3500
 Name=Floating Disk
 Size=6
 Armor=light
@@ -16864,7 +16887,7 @@ Soylent=1750
 AltCameo=DISKUICO
 Category=AirPower
 IsTilter=yes
-Strength=180000
+Strength=6000
 Crashable=yes
 Explosion=TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60
 Locomotor={92612C46-F71F-11d1-AC9F-006008055BB5}
@@ -16918,7 +16941,7 @@ AllowedToStartInMultiplayer=no
 
 [DLPH]
 ROT=6
-Cost=500
+Cost=1000
 Name=Dolphin
 Size=15
 Armor=light
@@ -16976,7 +16999,7 @@ AllowedToStartInMultiplayer=no
 [DMISL]
 ROT=4
 Ammo=1
-Cost=50
+Cost=100
 Name=Dread Missile
 Armor=special_2
 Owner=Russians,Confederation,Africans,Arabs
@@ -17048,7 +17071,7 @@ DeformThreshhold=300
 
 [DNOA]
 ROT=40
-Cost=2700
+Cost=5400
 Name=Animal T-Rex
 Size=30
 Armor=Plate
@@ -17072,7 +17095,7 @@ IsTilter=no
 NoShadow=yes
 NotHuman=yes
 Sequence=TrexSequence
-Strength=60000
+Strength=3000
 Crushable=no
 Locomotor={4A582744-9839-11d1-B709-00A024DDAFD1}
 Remapable=no
@@ -17106,7 +17129,7 @@ AllowedToStartInMultiplayer=no
 
 [DNOB]
 ROT=40
-Cost=1000
+Cost=2000
 Name=Animal Bront
 Size=30
 Armor=light
@@ -17164,7 +17187,7 @@ AllowedToStartInMultiplayer=no
 
 [DOG]
 Pip=white
-Cost=200
+Cost=400
 Name=Attack Dog
 Size=1
 Armor=none
@@ -17186,7 +17209,7 @@ Category=Soldier
 DieSound=DogDie
 NotHuman=yes
 Sequence=DogSequence
-Strength=15000
+Strength=1000
 Locomotor={4A582744-9839-11d1-B709-00A024DDAFD1}
 Remapable=yes
 Secondary=VirtualScanner
@@ -17278,7 +17301,7 @@ AllowedToStartInMultiplayer=no
 
 [DRED]
 ROT=1
-Cost=2000
+Cost=4000
 Name=Dreadnought
 Size=50
 Armor=heavy
@@ -17333,7 +17356,7 @@ AllowedToStartInMultiplayer=no
 
 [DRON]
 ROT=40
-Cost=500
+Cost=1000
 Name=Terror Drone
 Size=2
 Armor=special_1
@@ -17354,7 +17377,7 @@ Category=AFV
 DieSound=TerrorDroneDie
 Explodes=no
 IsTilter=no
-Strength=30000
+Strength=1000
 Explosion=TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60
 Locomotor={4A582741-9839-11d1-B709-00A024DDAFD1}
 MaxDebris=2
@@ -17405,7 +17428,7 @@ LegalTarget=true
 
 [DTRUCK]
 ROT=5
-Cost=1500
+Cost=3000
 Name=Demolitions Truck
 Size=3
 Armor=light
@@ -17424,7 +17447,7 @@ Soylent=1500
 Category=AFV
 DieSound=DemoTruckDie
 Explodes=yes
-Strength=45000
+Strength=1500
 Explosion=TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60
 Locomotor={4A582741-9839-11d1-B709-00A024DDAFD1}
 MaxDebris=2
@@ -17478,7 +17501,7 @@ Projectile=Invisible
 ROF=20
 Range=1.5
 Speed=100
-Damage=1
+Damage=2
 Report=DefuseKit
 Warhead=BombDisarm
 FireOnce=yes
@@ -17490,7 +17513,7 @@ CellRangefinding=yes
 ROF=80
 Range=1
 Speed=35
-Damage=300
+Damage=600
 Report=DemoTruckDie
 Suicide=yes
 Warhead=DemobombWH
@@ -17517,7 +17540,7 @@ IgnoresFirestorm=yes
 
 [Difficult]
 ROF=1.2
-Cost=1.0
+Cost=2.0
 Armor=.8
 Airspeed=1.0
 BuildTime=1.0
@@ -17532,7 +17555,7 @@ ROF=50
 Burst=1
 Range=1.5
 Speed=20
-Damage=1
+Damage=2
 Report=KirovAttack
 Warhead=AntiB
 FireOnce=yes
@@ -17547,7 +17570,7 @@ ROF=80
 Range=7
 Speed=40
 Bright=yes
-Damage=90
+Damage=180
 Report=FloatingDiscAttack
 Warhead=DiskWH
 OmniFire=yes
@@ -17563,7 +17586,7 @@ ROF=80
 Range=7
 Speed=40
 Bright=yes
-Damage=90
+Damage=180
 Report=FloatingDiscAttack
 Warhead=DiskWH
 OmniFire=yes
@@ -17594,7 +17617,7 @@ PercentAtMax=.2
 ROF=5
 Range=6
 Speed=100
-Damage=125
+Damage=250
 Report=TanyaAttack
 Warhead=HollowPoint2
 Projectile=InvisibleLow
@@ -17604,7 +17627,7 @@ AssaultAnim=UCBLOOD
 ROF=10
 Range=8
 Speed=100
-Damage=125
+Damage=250
 Report=TanyaAttack
 Warhead=HollowPoint2
 Projectile=InvisibleLow
@@ -17615,7 +17638,7 @@ ROF=50
 Burst=2
 Range=6
 Speed=25
-Damage=30
+Damage=60
 Report=SeawolfAttack
 Warhead=AP
 Projectile=AAHeatSeeker2
@@ -17625,7 +17648,7 @@ ROF=20
 Range=1.75
 Speed=30
 Bright=yes
-Damage=200
+Damage=400
 Warhead=AP
 Projectile=DredMissile
 CellRangefinding=yes
@@ -17635,7 +17658,7 @@ ROF=50
 Burst=2
 Range=25
 Speed=15
-Damage=50
+Damage=100
 Spawner=yes
 Warhead=Special
 OmniFire=yes
@@ -17656,7 +17679,7 @@ FirersPalette=yes
 ROF=60
 Range=1.83
 Speed=30
-Damage=50
+Damage=100
 Report=TerrorDroneAttack
 Warhead=Parasite
 Projectile=JUMP
@@ -17669,7 +17692,7 @@ Verses=0%,0%,0%,0%,0%,0%,0%,0%,0%,0%,0%
 
 [E1]
 Pip=white
-Cost=200
+Cost=400
 Name=GI
 Size=1
 Armor=none
@@ -17687,7 +17710,7 @@ Category=Soldier
 Deployer=yes
 DieSound=GIDie
 Occupier=yes
-Strength=37500
+Strength=1250
 Crushable=yes
 Locomotor={4A582744-9839-11d1-B709-00A024DDAFD1}
 OccupyPip=PersonBlue
@@ -17719,7 +17742,7 @@ IsSelectableCombatant=yes
 
 [E2]
 Pip=white
-Cost=100
+Cost=200
 Name=Conscript
 Size=1
 Armor=flak
@@ -17735,7 +17758,7 @@ Soylent=50
 Category=Soldier
 DieSound=ConscriptDie
 Occupier=yes
-Strength=37500
+Strength=1250
 Locomotor={4A582744-9839-11d1-B709-00A024DDAFD1}
 OccupyPip=PersonRed
 TechLevel=1
@@ -17759,7 +17782,7 @@ IsSelectableCombatant=yes
 
 [EINS]
 Pip=yellow
-Cost=10
+Cost=20
 Name=Albert Einstein
 Size=1
 Armor=none
@@ -17802,7 +17825,7 @@ EMEffect=yes
 ROF=1
 Range=40
 Speed=25
-Damage=1200
+Damage=2400
 Lobber=yes
 Report=PLSECAN2
 Warhead=EMPuls
@@ -17810,7 +17833,7 @@ Projectile=PulsPr
 
 [ENGINEER]
 Pip=Blue
-Cost=500
+Cost=1000
 Name=Engineer
 Size=1
 Armor=none
@@ -17907,7 +17930,7 @@ AllowedToStartInMultiplayer=no
 
 [Easy]
 ROF=.8
-Cost=1.0
+Cost=2.0
 Armor=1.2
 Airspeed=1.0
 BuildTime=.8
@@ -17926,7 +17949,7 @@ Recruitable=no
 ROF=20
 Range=20
 Speed=100
-Damage=2000
+Damage=4000
 Report=ParisTowerAttack
 Warhead=Electric
 Projectile=InvisibleHigh
@@ -17948,7 +17971,7 @@ ElectricAssault=yes
 ROF=60
 Range=3
 Speed=100
-Damage=50
+Damage=100
 Report=TeslaTroopAttack
 Warhead=Shock
 Projectile=InvisibleLow
@@ -17959,7 +17982,7 @@ IsElectricBolt=true
 ROF=40
 Range=5
 Speed=100
-Damage=50
+Damage=100
 Report=TeslaTroopEliteAttack
 Warhead=Shock
 Projectile=Electricbounce
@@ -17970,7 +17993,7 @@ IsElectricBolt=true
 ROF=40
 Range=5
 Speed=100
-Damage=50
+Damage=100
 Report=TeslaTroopAttack
 Warhead=Shock
 Projectile=Invisiblelow
@@ -18196,7 +18219,7 @@ NoUseTileLandType=true
 
 [FLAKT]
 Pip=white
-Cost=300
+Cost=600
 Name=Flak Trooper
 Size=1
 Armor=none
@@ -18215,7 +18238,7 @@ AltCameo=FLKTUICO
 Category=Soldier
 DieSound=FlakTroopDie
 Sequence=FlakSequence
-Strength=30000
+Strength=1000
 Locomotor={4A582744-9839-11d1-B709-00A024DDAFD1}
 Remapable=yes
 Secondary=FlakGuyAAGun
@@ -18288,7 +18311,7 @@ AllowedToStartInMultiplayer=no
 
 [FV]
 ROT=5
-Cost=600
+Cost=1200
 Name=IFV
 Size=3
 Armor=light
@@ -18317,7 +18340,7 @@ AltCameo=FVUICO
 Category=Transport
 DieSound=GenVehicleDie
 PipScale=Passengers
-Strength=60000
+Strength=2000
 Weapon10=CRRadBeamWeapon
 Weapon11=CRNeutronRifle
 Weapon12=CRTerrorBomb
@@ -18439,7 +18462,7 @@ TerroristExplodeTurretWeapon=11
 ROF=10
 Range=1.5
 Speed=100
-Damage=5000
+Damage=10000
 Report=SealPlaceBomb
 Warhead=FakeC4WH
 Projectile=InvisibleLow
@@ -18455,7 +18478,7 @@ ROF=30
 Burst=3
 Range=5
 Speed=25
-Damage=35
+Damage=70
 Report=
 Warhead=Shard
 Projectile=DogShard
@@ -18485,7 +18508,7 @@ Deacc=0.01
 Image=WCCLOUD1
 MaxDC=3
 MaxEC=500
-Damage=2
+Damage=4
 Report=FLAMTNK1
 Warhead=Fire
 Velocity=28.0
@@ -18547,7 +18570,7 @@ ROF=25
 Anim=GUNFIRE
 Range=8
 Speed=100
-Damage=20
+Damage=40
 Report=FlakTrackAttackAir
 Warhead=FlakGuyWH
 Projectile=FlakProj
@@ -18558,7 +18581,7 @@ Anim=GUNFIRE
 Burst=2
 Range=8
 Speed=100
-Damage=8
+Damage=16
 Report=FlakTrackAttackAir
 Warhead=FlakGuyWH
 Projectile=FlakProj
@@ -18568,7 +18591,7 @@ ROF=20
 Anim=GUNFIRE
 Range=5
 Speed=50
-Damage=20
+Damage=40
 Report=FlakTrackAttackGround
 Warhead=FlakTWH
 Projectile=FlakTProj
@@ -18579,7 +18602,7 @@ Anim=GUNFIRE
 Burst=2
 Range=5
 Speed=50
-Damage=20
+Damage=40
 Report=FlakTrackAttackGround
 Warhead=FlakTWH
 Projectile=FlakTProj
@@ -18630,7 +18653,7 @@ ROF=25
 Anim=GUNFIRE
 Range=10
 Speed=100
-Damage=35
+Damage=70
 Report=FlakTrackAttackAir
 Warhead=FlakWH
 Projectile=FlakProj
@@ -18641,7 +18664,7 @@ Anim=GUNFIRE
 Burst=2
 Range=8
 Speed=100
-Damage=20
+Damage=40
 Report=FlakTrackAttackAir
 Warhead=FlakWH
 Projectile=FlakProj
@@ -18651,7 +18674,7 @@ ROF=25
 Anim=GUNFIRE
 Range=5
 Speed=50
-Damage=25
+Damage=50
 Report=FlakTrackAttackGround
 Warhead=FlakTWH
 Projectile=FlakTProj
@@ -18662,7 +18685,7 @@ Anim=GUNFIRE
 Burst=2
 Range=5
 Speed=50
-Damage=25
+Damage=50
 Report=FlakTrackAttackGround
 Warhead=FlakTWH
 Projectile=FlakTProj
@@ -18679,7 +18702,7 @@ ROF=20
 Anim=GUNFIRE
 Range=12
 Speed=100
-Damage=40
+Damage=80
 Report=FlakCannonAttack
 Warhead=FlakWH
 Projectile=FlakProj
@@ -18690,7 +18713,7 @@ Anim=GUNFIRE
 Burst=2
 Range=10
 Speed=100
-Damage=35
+Damage=70
 Report=FlakCannonAttack
 Warhead=FlakWH
 Projectile=FlakProj
@@ -18698,7 +18721,7 @@ Projectile=FlakProj
 [Flare]
 ROF=60
 Range=12
-Damage=1
+Damage=2
 IsLine=true
 Warhead=AirstrikeFlare
 Projectile=Invisible
@@ -18726,7 +18749,7 @@ DisableableFromShell=yes
 FlashSidebarTabFrames=120
 
 [GAAIRC]
-Cost=1000
+Cost=2000
 Flat=yes
 Name=Allied Airforce Command Headquarters
 Armor=steel
@@ -18800,7 +18823,7 @@ ActiveAnimThreeDamaged=GAAIRC_CD
 ActiveAnimThreeZAdjust=-80
 
 [GACNST]
-Cost=3000
+Cost=6000
 Name=Allied Construction Yard
 Armor=concrete
 Owner=British,French,Germans,Americans,Alliance
@@ -18850,7 +18873,7 @@ ProductionAnimZAdjust=-10
 EligibileForAllyBuilding=yes
 
 [GACSPH]
-Cost=2500
+Cost=5000
 Name=Allied Chrono Sphere
 Armor=concrete
 Cameo=csphicon
@@ -18912,7 +18935,7 @@ SuperAnimThreeDamaged=GACSPH_GD
 SuperAnimThreeZAdjust=-20
 
 [GADEPT]
-Cost=800
+Cost=1600
 Flat=yes
 Name=Allied Service Depot
 Armor=wood
@@ -18976,7 +18999,7 @@ SpecialAnimThreeDamaged=GADEPT_CD
 SpecialAnimThreeZAdjust=0
 
 [GADUMY]
-Cost=2800
+Cost=5600
 Name=Dummy ChronoSphere
 Armor=wood
 Image=NTIRON
@@ -19001,7 +19024,7 @@ ThreatPosed=1
 Prerequisite=GATECH
 
 [GAFWLL]
-Cost=100
+Cost=200
 Name=Yuri Citadel Wall
 Wall=yes
 Armor=concrete
@@ -19030,7 +19053,7 @@ Insignificant=yes
 AIBasePlanningSide=2
 
 [GAGAP]
-Cost=1000
+Cost=2000
 Name=Allied Gap Generator
 Armor=wood
 Cameo=Gapicon
@@ -19078,7 +19101,7 @@ HasRadialIndicator=true
 SuperGapRadiusInCells=10
 
 [GAGATE_A]
-Cost=250
+Cost=500
 Gate=yes
 Name=Guard Border Crossing
 Armor=wood
@@ -19114,7 +19137,7 @@ GateCloseDelay=.2
 SpecialZOverlay=GAGATEZA
 
 [GAGREEN]
-Cost=100
+Cost=200
 Name=Green Building
 Armor=wood
 Image=null
@@ -19138,7 +19161,7 @@ Prerequisite=GAPILE
 Insignificant=yes
 
 [GALITE]
-Cost=200
+Cost=400
 Name=Light Post
 Armor=wood
 Cameo=LITEICON
@@ -19171,7 +19194,7 @@ ExtraDamageStage=false
 DamageParticleSystems=SparkSys,LGSparkSys
 
 [GAOREP]
-Cost=2500
+Cost=5000
 Name=Allied Ore Processor
 Armor=wood
 Cameo=gorep
@@ -19221,7 +19244,7 @@ AIBasePlanningSide=0
 HalfDamageSmokeLocation1=0,0,0
 
 [GAPILE]
-Cost=500
+Cost=1000
 Name=Allied Barracks
 Armor=steel
 Cameo=BRRKICON
@@ -19271,7 +19294,7 @@ DamageParticleSystems=SparkSys,SmallGreySSys,BigGreySmokeSys
 
 [GAPILL]
 ROT=10
-Cost=500
+Cost=1000
 Name=Allied Pill Box
 Armor=steel
 Cameo=pillicon
@@ -19317,7 +19340,7 @@ PrimaryFireDualOffset=true
 PrimaryFirePixelOffset=0,10
 
 [GAPOWR]
-Cost=800
+Cost=1600
 Name=Allied Power Plant
 Armor=wood
 Cameo=POWRICON
@@ -19369,7 +19392,7 @@ ActiveAnimPoweredSpecial=true
 
 [GAREFN]
 Bib=yes
-Cost=2000
+Cost=4000
 Name=Allied Ore Refinery
 Armor=wood
 Cameo=REFICON
@@ -19446,7 +19469,7 @@ HalfDamageSmokeLocation1=0,0,0
 RefinerySmokeParticleSystem=SmallGreySSys
 
 [GAROBO]
-Cost=600
+Cost=1200
 Name=Allied Robot Control Center
 Armor=wood
 Cameo=RBCCICON
@@ -19498,7 +19521,7 @@ AIBasePlanningSide=0
 HalfDamageSmokeLocation1=0,0,0
 
 [GASAND]
-Cost=25
+Cost=50
 Name=Sandbags
 Wall=yes
 Armor=wood
@@ -19528,7 +19551,7 @@ Prerequisite=BARRACKS
 Insignificant=yes
 
 [GASPYSAT]
-Cost=1500
+Cost=3000
 Name=Allied SpySat Uplink
 Armor=wood
 Image=GASPST
@@ -19559,7 +19582,7 @@ SpecialThreatValue=1
 
 [GASTANK]
 Name=Flying Gas Tank
-Damage=20
+Damage=40
 MaxZVel=35.0
 MinZVel=30.0
 Warhead=TankOGas
@@ -19572,7 +19595,7 @@ MaxAngularVelocity=15.0
 MinAngularVelocity=9.0
 
 [GATECH]
-Cost=2000
+Cost=4000
 Name=Allied Battle Lab
 Armor=wood
 Cameo=TECHICON
@@ -19620,7 +19643,7 @@ DemandLoadBuildup=true
 AIBasePlanningSide=0
 
 [GAWALL]
-Cost=100
+Cost=200
 Name=Allied Wall
 Wall=yes
 Armor=concrete
@@ -19650,7 +19673,7 @@ AIBasePlanningSide=0
 
 [GAWEAP]
 Bib=yes
-Cost=2000
+Cost=4000
 Name=Allied War Factory
 Armor=wood
 Cameo=gwepicon
@@ -19718,7 +19741,7 @@ NumberImpassableRows=1
 DamageParticleSystems=SparkSys,SmallGreySSys,BigGreySmokeSys
 
 [GAWEAT]
-Cost=5000
+Cost=10000
 Name=Allied Weather Controller
 Armor=concrete
 Image=GAWETH
@@ -19751,7 +19774,7 @@ ProtectWithWall=yes
 AIBasePlanningSide=0
 
 [GAYARD]
-Cost=1000
+Cost=2000
 Name=Allied Shipyard
 Armor=concrete
 Cameo=ayaricon
@@ -19934,7 +19957,7 @@ RadarInvisible=false
 
 [GGI]
 Pip=white
-Cost=400
+Cost=800
 Name=Guardian GI
 Size=1
 Armor=none
@@ -19956,7 +19979,7 @@ Deployer=yes
 DieSound=GuardianGIDie
 Occupier=no
 Sequence=GuardianGISequence
-Strength=30000
+Strength=1000
 Crushable=yes
 Locomotor={4A582744-9839-11d1-B709-00A024DDAFD1}
 Remapable=yes
@@ -19992,7 +20015,7 @@ AllowedToStartInMultiplayer=no
 [GHOST]
 C4=yes
 Pip=red
-Cost=1000
+Cost=2000
 Name=SEAL
 Size=1
 Armor=flak
@@ -20007,7 +20030,7 @@ Primary=MP5
 Soylent=500
 Category=Soldier
 DieSound=SealDie
-Strength=37500
+Strength=1250
 Assaulter=no
 Crushable=yes
 Locomotor={4A582744-9839-11d1-B709-00A024DDAFD1}
@@ -20080,7 +20103,7 @@ PercentAtMax=.5
 
 [GTGCAN]
 ROT=1
-Cost=2000
+Cost=4000
 Name=Allied Grand Cannon
 Armor=steel
 Cameo=GCANICON
@@ -20156,7 +20179,7 @@ PercentAtMax=1
 Image=WCCLOUD1
 MaxDC=60
 MaxEC=1000
-Damage=5
+Damage=10
 Warhead=Gas
 EndStateAI=28
 StartFrame=0
@@ -20170,7 +20193,7 @@ StateAIAdvance=4
 Image=WCCLOUD1
 MaxDC=60
 MaxEC=1000
-Damage=40
+Damage=80
 Warhead=Gas
 EndStateAI=28
 StartFrame=0
@@ -20184,7 +20207,7 @@ StateAIAdvance=4
 Image=WCCLOUD1
 MaxDC=60
 MaxEC=50
-Damage=10
+Damage=20
 Warhead=Gas
 EndStateAI=12
 StartFrame=0
@@ -20198,7 +20221,7 @@ DeleteOnStateLimit=yes
 Image=WCCLOUD1
 MaxDC=60
 MaxEC=50
-Damage=10
+Damage=20
 Warhead=Gas
 EndStateAI=12
 StartFrame=0
@@ -20256,7 +20279,7 @@ ROF=10
 Anim=GUNFIRE
 Range=7
 Speed=100
-Damage=30
+Damage=60
 Report=SentryGunAttack
 Warhead=GattWH
 Projectile=Invisible3
@@ -20680,7 +20703,7 @@ DetonationAltitude=20000
 ROF=30
 Range=1.5
 Speed=30
-Damage=30
+Damage=60
 Report=DogAttack
 Warhead=ParasiteDog
 Projectile=ADOGJUMP
@@ -20714,7 +20737,7 @@ Anim=GCMUZZLE
 Range=15
 Speed=1
 Bright=yes
-Damage=150
+Damage=300
 Report=GrandCannonAttack
 Warhead=GrandCannonWH
 Projectile=GrandCannonBall
@@ -20725,7 +20748,7 @@ ROF=60
 Range=4.5
 Speed=5
 Bright=yes
-Damage=40
+Damage=80
 Warhead=HE
 Projectile=Lobbed
 
@@ -20735,7 +20758,7 @@ AARate=.016
 
 [HARV]
 ROT=5
-Cost=1400
+Cost=2800
 Dock=NAREFN,GAREFN
 Name=War Miner
 Size=3
@@ -20759,7 +20782,7 @@ AltCameo=HARVUICO
 Category=Support
 DieSound=GenVehicleDie
 PipScale=Tiberium
-Strength=300000
+Strength=10000
 AutoCrush=yes
 Explosion=TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60
 Harvester=yes
@@ -20834,7 +20857,7 @@ DeformThreshhold=300
 
 [HIND]
 ROT=10
-Cost=1000
+Cost=2000
 Name=Hind Transport
 Size=15
 Armor=light
@@ -20897,7 +20920,7 @@ AllowedToStartInMultiplayer=no
 [HORNET]
 ROT=3
 Ammo=1
-Cost=50
+Cost=100
 Name=Hornet
 Armor=light
 Cameo=PROICON
@@ -20945,7 +20968,7 @@ DamageParticleSystems=SparkSys,SmallGreySSys
 
 [HORV]
 ROT=5
-Cost=1400
+Cost=2800
 Dock=NAREFN,GAREFN
 Name=War Miner
 Armor=medium
@@ -20986,7 +21009,7 @@ AllowedToStartInMultiplayer=no
 
 [HOWI]
 ROT=5
-Cost=750
+Cost=1500
 Name=Howitzer
 Size=3
 Armor=light
@@ -21002,7 +21025,7 @@ Primary=HowitzerGun
 Soylent=750
 Category=AFV
 IsTilter=yes
-Strength=60000
+Strength=2000
 Explosion=TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60
 Locomotor={4A582741-9839-11d1-B709-00A024DDAFD1}
 MaxDebris=2
@@ -21028,7 +21051,7 @@ AllowedToStartInMultiplayer=no
 
 [HTK]
 ROT=5
-Cost=500
+Cost=1000
 Name=Flak Track
 Size=3
 Armor=heavy
@@ -21047,7 +21070,7 @@ AltCameo=HTKUICO
 Category=Transport
 DieSound=GenVehicleDie
 PipScale=Passengers
-Strength=54000
+Strength=1800
 Explosion=TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60
 Locomotor={4A582741-9839-11d1-B709-00A024DDAFD1}
 Maxdebris=3
@@ -21090,7 +21113,7 @@ AllowedToStartInMultiplayer=no
 
 [HTNK]
 ROT=5
-Cost=900
+Cost=1800
 Name=Rhino Heavy Tank
 Size=3
 Armor=heavy
@@ -21110,7 +21133,7 @@ AltCameo=HTNKUICO
 Category=AFV
 DieSound=GenVehicleDie
 IsTilter=yes
-Strength=120000
+Strength=4000
 Explosion=TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60
 Locomotor={4A582741-9839-11d1-B709-00A024DDAFD1}
 Maxdebris=3
@@ -21143,7 +21166,7 @@ TooBigToFitUnderBridge=true
 
 [HYD]
 ROT=6
-Cost=600
+Cost=1200
 Name=Sea Scorpion
 Size=20
 Armor=heavy
@@ -21200,7 +21223,7 @@ Recruitable=no
 ROF=36
 Range=5
 Speed=100
-Damage=60
+Damage=120
 Report=CYGUN1
 Warhead=SA
 Projectile=Invisible2
@@ -21215,7 +21238,7 @@ Recruitable=no
 ROF=80
 Range=2.83
 Speed=100
-Damage=-50
+Damage=-100
 Report=HEALER1
 Warhead=Organic
 Projectile=Invisible
@@ -21236,7 +21259,7 @@ ROF=50
 Burst=2
 Range=6
 Speed=30
-Damage=30
+Damage=60
 Report=ORCAMIS1
 Warhead=ORCAAP
 Projectile=AAHeatSeeker2
@@ -21280,7 +21303,7 @@ ProneDamage=100%
 ROF=3
 Range=5
 Speed=30
-Damage=40
+Damage=80
 Report=HornetAttack
 Warhead=ORCAAP
 Projectile=NormalBomb
@@ -21289,7 +21312,7 @@ Projectile=NormalBomb
 ROF=3
 Range=5
 Speed=30
-Damage=80
+Damage=160
 Report=HornetAttack
 Warhead=ARTYHE
 Projectile=NormalBomb
@@ -21299,7 +21322,7 @@ ROF=20
 Range=3
 Speed=30
 Bright=yes
-Damage=100
+Damage=200
 Report=HornetCollision
 Warhead=AP
 Projectile=AAHeatSeeker2
@@ -21308,7 +21331,7 @@ Projectile=AAHeatSeeker2
 ROF=150
 Range=25
 Speed=10
-Damage=1
+Damage=2
 Spawner=yes
 Warhead=Special
 OmniFire=yes
@@ -21319,7 +21342,7 @@ ROF=50
 Burst=2
 Range=6
 Speed=40
-Damage=25
+Damage=50
 Report=SeawolfAttack
 Warhead=HE
 Projectile=AAHeatSeeker2
@@ -21330,7 +21353,7 @@ ROF=50
 Burst=2
 Range=10
 Speed=40
-Damage=25
+Damage=50
 Report=SeawolfAttack
 Warhead=AP
 Projectile=AAHeatSeeker
@@ -21341,7 +21364,7 @@ ROF=50
 Burst=2
 Range=10
 Speed=40
-Damage=25
+Damage=50
 Report=SeawolfAttack
 Warhead=AP
 Projectile=AAHeatSeeker
@@ -21352,7 +21375,7 @@ ROF=50
 Burst=4
 Range=6
 Speed=40
-Damage=80
+Damage=160
 Report=SeawolfAttack
 Warhead=HE
 Projectile=AAHeatSeeker2
@@ -21364,7 +21387,7 @@ Anim=GUNFIRE
 Range=12
 Speed=100
 Bright=yes
-Damage=75
+Damage=150
 Report=ApocalypseAttackGround
 Warhead=HowitzerWH
 Projectile=Ballistic
@@ -21497,7 +21520,7 @@ DamageParticleSystems=SparkSys,LGSparkSys
 
 [INIT]
 Pip=white
-Cost=200
+Cost=400
 Name=Yuri Initiate
 Size=1
 Armor=none
@@ -21517,7 +21540,7 @@ Category=Soldier
 DieSound=InitiateDie
 Occupier=yes
 Sequence=LangIdleMDSequence
-Strength=30000
+Strength=1000
 Locomotor={4A582744-9839-11d1-B709-00A024DDAFD1}
 OccupyPip=PersonPurple
 Remapable=yes
@@ -21656,7 +21679,7 @@ SuperWeapons=4
 
 [IVAN]
 Pip=red
-Cost=600
+Cost=1200
 Ivan=yes
 Name=Crazy Ivan
 Size=1
@@ -21676,7 +21699,7 @@ Category=Soldier
 DieSound=CrazyIvanDie
 Explodes=yes
 Sequence=IvanSequence
-Strength=37500
+Strength=1250
 Locomotor={4A582744-9839-11d1-B709-00A024DDAFD1}
 Remapable=yes
 TechLevel=5
@@ -21902,7 +21925,7 @@ IvanBomb=yes
 [IvanBomber]
 ROF=50
 Range=1.5
-Damage=400
+Damage=800
 Warhead=IvanBomb
 FireOnce=yes
 Projectile=Invisible
@@ -21912,7 +21935,7 @@ CellRangefinding=yes
 [IvanBomberE]
 ROF=50
 Range=1.5
-Damage=600
+Damage=1200
 Warhead=IvanBomb
 FireOnce=yes
 Projectile=Invisible
@@ -21975,7 +21998,7 @@ AllowedToStartInMultiplayer=no
 
 [JOSH]
 Pip=yellow
-Cost=10
+Cost=20
 Name=Animal Monkey
 Size=2
 Armor=none
@@ -22029,7 +22052,7 @@ SubjectToElevation=no
 
 [JUMPJET]
 Pip=white
-Cost=600
+Cost=1200
 Name=Rocketeer
 Size=1
 Armor=none
@@ -22045,7 +22068,7 @@ Soylent=300
 Category=Soldier
 DieSound=
 Fearless=yes
-Strength=12500
+Strength=1250
 Crashable=yes
 Crushable=yes
 Locomotor={92612C46-F71F-11d1-AC9F-006008055BB5}
@@ -22086,7 +22109,7 @@ ROF=40
 Burst=2
 Range=5
 Speed=100
-Damage=15
+Damage=30
 Report=JUMPJET1
 Warhead=SA
 Projectile=Invisible3
@@ -22122,7 +22145,7 @@ UseNormalLight=yes
 
 [LCRF]
 ROT=5
-Cost=900
+Cost=1800
 Name=Landing Craft
 Size=16
 Armor=light
@@ -22884,7 +22907,7 @@ NoUseTileLandType=true
 
 [LTNK]
 ROT=5
-Cost=700
+Cost=1400
 Name=Lasher Light Tank
 Size=3
 Armor=heavy
@@ -23032,7 +23055,7 @@ AnimList=XGRYSML1,XGRYSML2,EXPLOSML,XGRYMED1,XGRYMED2,EXPLOMED,EXPLOLRG,TWLT070
 
 [LUNR]
 Pip=white
-Cost=600
+Cost=1200
 Name=Lunar Infantry
 Size=1
 Armor=none
@@ -23053,7 +23076,7 @@ Category=Soldier
 DieSound=
 Fearless=yes
 Sequence=RocketeerSequence
-Strength=12500
+Strength=1250
 Crashable=yes
 Crushable=yes
 Locomotor={92612C46-F71F-11d1-AC9F-006008055BB5}
@@ -23206,7 +23229,7 @@ ZVelocityRange=15
 ROF=120
 Range=10.5
 Speed=100
-Damage=250
+Damage=500
 Report=PrismTowerAttack
 Charges=yes
 IsLaser=true
@@ -23222,7 +23245,7 @@ LaserOuterSpread=20,40,40
 ROF=40
 Range=5.5
 Speed=100
-Damage=30
+Damage=60
 Report=LASTUR1
 Charges=no
 IsLaser=true
@@ -23291,7 +23314,7 @@ ROF=20
 Range=7
 Speed=40
 Bright=yes
-Damage=25
+Damage=50
 Report=LaserCosmoAttack
 IsLaser=true
 Warhead=LUNARWH
@@ -23304,7 +23327,7 @@ LaserOuterSpread=0,0,0
 ROF=25
 Range=4
 Speed=100
-Damage=15
+Damage=30
 Report=ConscriptAttack
 Warhead=SA
 Projectile=InvisibleLow
@@ -23314,7 +23337,7 @@ OccupantAnim=UCCONS
 ROF=25
 Range=5
 Speed=100
-Damage=20
+Damage=40
 Report=ConscriptAttack
 Warhead=SA
 Projectile=InvisibleLow
@@ -23325,7 +23348,7 @@ ROF=20
 Anim=MGUN-N,MGUN-NE,MGUN-E,MGUN-SE,MGUN-S,MGUN-SW,MGUN-W,MGUN-NW
 Range=4
 Speed=100
-Damage=15
+Damage=30
 Report=GIAttack
 Warhead=SA
 Projectile=InvisibleLow
@@ -23336,7 +23359,7 @@ ROF=20
 Anim=MGUN-N,MGUN-NE,MGUN-E,MGUN-SE,MGUN-S,MGUN-SW,MGUN-W,MGUN-NW
 Range=4
 Speed=100
-Damage=25
+Damage=50
 Report=GIAttack
 Warhead=SA
 Projectile=InvisibleLow
@@ -23364,7 +23387,7 @@ ClickRepairable=no
 [METEOR01]
 Name=Meteorite01
 Image=MTRS
-Damage=500
+Damage=1000
 Spawns=PEBBLE
 MaxZVel=-100.0
 MinZVel=-100.0
@@ -23382,7 +23405,7 @@ MinAngularVelocity=12.0
 [METEOR02]
 Name=Meteorite02
 Image=MTRB
-Damage=500
+Damage=1000
 Spawns=PEBBLE
 MaxZVel=-100.0
 MinZVel=-100.0
@@ -23400,7 +23423,7 @@ MinAngularVelocity=12.0
 
 [MGTK]
 ROT=5
-Cost=1000
+Cost=2000
 Name=Mirage Tank
 Size=3
 Armor=light
@@ -23417,7 +23440,7 @@ Soylent=1000
 Category=AFV
 DieSound=GenVehicleDie
 IsTilter=yes
-Strength=60000
+Strength=2000
 Explosion=TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60
 Locomotor={4A582741-9839-11d1-B709-00A024DDAFD1}
 MaxDebris=2
@@ -23456,7 +23479,7 @@ Conventional=yes
 
 [MIND]
 ROT=5
-Cost=1750
+Cost=3500
 Name=Master Mind
 Size=6
 Armor=heavy
@@ -23476,7 +23499,7 @@ Category=AFV
 DieSound=GenVehicleDie
 IsTilter=yes
 PipScale=MindControl
-Strength=150000
+Strength=5000
 Explosion=TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60
 Locomotor={4A582741-9839-11d1-B709-00A024DDAFD1}
 Maxdebris=3
@@ -23516,7 +23539,7 @@ AllowedToStartInMultiplayer=no
 ROF=10
 Range=6
 Speed=100
-Damage=125
+Damage=250
 Report=SealAttack
 Warhead=HollowPoint
 Projectile=InvisibleLow
@@ -23526,7 +23549,7 @@ AssaultAnim=UCBLOOD
 ROF=10
 Range=6
 Speed=100
-Damage=125
+Damage=250
 Report=SealAttack
 Warhead=HollowPoint
 Projectile=InvisibleLow
@@ -23534,7 +23557,7 @@ AssaultAnim=UCBLOOD
 
 [MTNK]
 ROT=5
-Cost=700
+Cost=1400
 Name=Grizzly Battle Tank
 Size=3
 Armor=heavy
@@ -23554,7 +23577,7 @@ AltCameo=MTNKUICO
 Category=AFV
 DieSound=GenVehicleDie
 IsTilter=yes
-Strength=90000
+Strength=3000
 Explosion=TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60
 Locomotor={4A582741-9839-11d1-B709-00A024DDAFD1}
 MaxDebris=2
@@ -23584,7 +23607,7 @@ TooBigToFitUnderBridge=true
 
 [MUMY]
 Pip=yellow
-Cost=100
+Cost=200
 Name=Evil Mummy
 Size=1
 Armor=plate
@@ -23629,7 +23652,7 @@ AllowedToStartInMultiplayer=no
 ROF=110
 Range=10
 Speed=40
-Damage=80
+Damage=160
 Report=MagnetronMagneShake
 Spread=2
 Warhead=MagneShakeWH
@@ -23644,7 +23667,7 @@ Bullets=yes
 ROF=20
 Range=12
 Speed=100
-Damage=5000
+Damage=10000
 Report=MagnetronAttack
 Warhead=LocomotorBeam
 IsMagBeam=yes
@@ -23655,7 +23678,7 @@ MinimumRange=3
 ROF=20
 Range=10
 Speed=100
-Damage=10000
+Damage=20000
 Report=MagnetronAttack
 Warhead=LocomotorBeam
 IsMagBeam=yes
@@ -23666,7 +23689,7 @@ MinimumRange=3
 ROF=100
 Range=-2
 Speed=100
-Damage=1
+Damage=2
 Report=SpyAttack
 Warhead=Snapshot
 FireOnce=yes
@@ -23679,7 +23702,7 @@ ROF=80
 Burst=2
 Range=8
 Speed=20
-Damage=50
+Damage=100
 Report=ApocalypseAttackAir
 Warhead=HE
 Projectile=AAHeatSeeker
@@ -23689,7 +23712,7 @@ ROF=10
 Burst=1
 Range=6
 Speed=70
-Damage=150
+Damage=300
 Report=IntruderAttack
 Warhead=ORCAAP
 Projectile=AirToGroundMissile
@@ -23699,7 +23722,7 @@ ROF=10
 Burst=1
 Range=6
 Speed=70
-Damage=200
+Damage=400
 Report=BlackEagleAttack
 Warhead=ORCAAP
 Projectile=AirToGroundMissile
@@ -23709,7 +23732,7 @@ ROF=10
 Burst=1
 Range=9
 Speed=70
-Damage=400
+Damage=800
 Report=BlackEagleAttack
 Warhead=ORCAAP
 Projectile=AirToGroundMissile
@@ -23719,7 +23742,7 @@ ROF=10
 Burst=2
 Range=4
 Speed=70
-Damage=750
+Damage=1500
 Report=MigAttack
 Warhead=MIGWH
 Projectile=AirToGroundMissile
@@ -23729,7 +23752,7 @@ ROF=10
 Burst=2
 Range=9
 Speed=70
-Damage=400
+Damage=800
 Report=BlackEagleAttack
 Warhead=ORCAAP
 Projectile=AirToGroundMissile
@@ -23739,7 +23762,7 @@ ROF=10
 Burst=1
 Range=9
 Speed=70
-Damage=300
+Damage=600
 Report=IntruderAttack
 Warhead=ORCAAP
 Projectile=AirToGroundMissile
@@ -23766,7 +23789,7 @@ Players=8
 ROF=20
 Range=12
 Speed=25
-Damage=1000
+Damage=2000
 Report=PrismTowerAttack
 IsLaser=true
 Warhead=PrismWarhead
@@ -23795,7 +23818,7 @@ InfDeath=0
 ROF=15
 Range=12
 Speed=120
-Damage=100
+Damage=200
 Report=AegisAttack
 Warhead=SAMWH
 OmniFire=yes
@@ -23807,7 +23830,7 @@ ROF=5
 Burst=2
 Range=14
 Speed=150
-Damage=100
+Damage=200
 Report=AegisAttack
 Warhead=SAMWH
 OmniFire=yes
@@ -23833,7 +23856,7 @@ ROF=200
 Anim=YURICNTL
 Range=7
 Speed=100
-Damage=1
+Damage=2
 Warhead=Controller
 FireOnce=yes
 Projectile=PsychicControl
@@ -23843,7 +23866,7 @@ ROF=200
 Anim=YURICNTL
 Range=14
 Speed=100
-Damage=10
+Damage=20
 Warhead=Controller
 FireOnce=yes
 Projectile=PsychicControl
@@ -23852,7 +23875,7 @@ Projectile=PsychicControl
 ROF=21
 Range=4
 Speed=100
-Damage=8
+Damage=16
 Report=GIAttack
 Warhead=SA
 Projectile=InvisibleLow
@@ -23863,7 +23886,7 @@ Anim=VTMUZZLE
 Range=7
 Speed=100
 Bright=yes
-Damage=100
+Damage=200
 Report=MirageTankAttack
 Warhead=MirageWH
 Projectile=InvisibleLow
@@ -23876,7 +23899,7 @@ ROF=80
 Range=9
 Speed=100
 Bright=yes
-Damage=150
+Damage=300
 Report=MirageTankAttack
 Warhead=MirageWH
 Projectile=InvisibleLow
@@ -23900,7 +23923,7 @@ ROF=40
 Burst=1
 Range=8
 Speed=30
-Damage=40
+Damage=80
 Report=GuardianGIDeployedAttack
 Warhead=GUARDWH
 Projectile=AAHeatSeeker2
@@ -23911,7 +23934,7 @@ ROF=20
 Burst=1
 Range=8
 Speed=40
-Damage=50
+Damage=100
 Report=GuardianGIDeployedAttack
 Warhead=GUARDWH
 Projectile=AAHeatSeeker2
@@ -23952,7 +23975,7 @@ ROF=10
 Anim=YURICNTL
 Range=6
 Speed=100
-Damage=3
+Damage=6
 Warhead=Controller
 FireOnce=yes
 OmniFire=yes
@@ -23964,7 +23987,7 @@ ROF=100
 Anim=YURICNTL
 Range=7
 Speed=100
-Damage=3
+Damage=6
 Warhead=Controller
 FireOnce=yes
 Projectile=PsychicControl
@@ -23973,7 +23996,7 @@ Projectile=PsychicControl
 ROF=60
 Range=1.4
 Speed=100
-Damage=100
+Damage=200
 Warhead=Battering
 Projectile=InvisibleLow
 FireInTransport=no
@@ -23982,7 +24005,7 @@ FireInTransport=no
 ROF=60
 Range=1.1
 Speed=100
-Damage=100
+Damage=200
 Warhead=Smashing
 Projectile=InvisibleLow
 
@@ -23997,7 +24020,7 @@ CellSpread=5
 PercentAtMax=1
 
 [NABNKR]
-Cost=500
+Cost=1000
 Name=Soviet Battle Bunker
 Armor=steel
 Cameo=BNKRICON
@@ -24046,7 +24069,7 @@ AIBasePlanningSide=1
 MaxNumberOccupants=5
 
 [NACLON]
-Cost=2500
+Cost=5000
 Name=Yuri Cloning Vats
 Armor=wood
 Cameo=CLONICON
@@ -24093,7 +24116,7 @@ AIBasePlanningSide=2
 DamageParticleSystems=SparkSys,SmallGreySmokeSys,BigGreySmokeSys
 
 [NACNST]
-Cost=3000
+Cost=6000
 Name=Soviet Construction Yard
 Armor=concrete
 Owner=Russians,Confederation,Africans,Arabs
@@ -24154,7 +24177,7 @@ ProductionAnimZAdjust=-5
 EligibileForAllyBuilding=yes
 
 [NADEPT]
-Cost=800
+Cost=1600
 Flat=yes
 Name=Soviet Service Depot
 Armor=wood
@@ -24217,7 +24240,7 @@ SpecialAnimThreeZAdjust=-70
 
 [NAFLAK]
 ROT=8
-Cost=1000
+Cost=2000
 Name=Soviet Flak Cannon
 Armor=steel
 Cameo=FLAKICON
@@ -24273,7 +24296,7 @@ AIBasePlanningSide=1
 HasStupidGuardMode=false
 
 [NAHAND]
-Cost=500
+Cost=1000
 Name=Soviet Barracks
 Armor=steel
 Cameo=HANDICON
@@ -24320,7 +24343,7 @@ DemandLoadBuildup=true
 AIBasePlanningSide=1
 
 [NAINDP]
-Cost=2500
+Cost=5000
 Name=Soviet Industrial Plant
 Armor=wood
 Cameo=INDPICON
@@ -24375,7 +24398,7 @@ BuildingsCostBonus=1
 HalfDamageSmokeLocation1=0,0,0
 
 [NAIRON]
-Cost=2500
+Cost=5000
 Name=Soviet Iron Curtain Device
 Armor=concrete
 Cameo=IRONICON
@@ -24432,7 +24455,7 @@ SuperAnimThreeZAdjust=-7
 
 [NALASR]
 ROT=10
-Cost=500
+Cost=1000
 Name=Soviet Sentry Gun
 Armor=steel
 Cameo=PLTICON
@@ -24487,7 +24510,7 @@ AIBasePlanningSide=1
 HasStupidGuardMode=false
 
 [NAMISL]
-Cost=5000
+Cost=10000
 Name=Soviet Nuclear Missile Silo
 Armor=concrete
 Cameo=MSSLICON
@@ -24558,7 +24581,7 @@ SuperAnimThreeZAdjust=-4
 PrimaryFirePixelOffset=0,44
 
 [NANRCT]
-Cost=1000
+Cost=2000
 Name=Soviet Nuclear Reactor
 Armor=concrete
 Cameo=NRCTICON
@@ -24616,7 +24639,7 @@ ActiveAnimPoweredSpecial=true
 DeathWeaponDamageModifier=0.5
 
 [NAPOWR]
-Cost=600
+Cost=1200
 Name=Soviet Tesla Reactor
 Armor=wood
 Cameo=NPWRICON
@@ -24664,7 +24687,7 @@ DamageParticleSystems=SparkSys,SmallGreySSys,BigGreySmokeSys
 ActiveAnimPoweredSpecial=true
 
 [NAPSIS]
-Cost=1000
+Cost=2000
 Name=Yuri Psychic Sensor
 Armor=wood
 Cameo=PSISICON
@@ -24756,7 +24779,7 @@ DamageFireOffset0=-20,44
 DamageFireOffset1=-74,64
 
 [NAPSYB]
-Cost=1000
+Cost=2000
 Name=Psychic Beacon
 Armor=wood
 Cameo=PSYBICON
@@ -24803,7 +24826,7 @@ HasRadialIndicator=true
 DamageParticleSystems=SparkSys,SmallGreySSys,BigGreySmokeSys
 
 [NARADR]
-Cost=1000
+Cost=2000
 Name=Soviet Radar Tower
 Armor=wood
 Cameo=NRADICON
@@ -24853,7 +24876,7 @@ DamageParticleSystems=SparkSys,SmallGreySSys,BigGreySmokeSys
 
 [NAREFN]
 Bib=yes
-Cost=2000
+Cost=4000
 Name=Soviet Ore Refinery
 Armor=wood
 Cameo=NREFICON
@@ -24932,7 +24955,7 @@ RefinerySmokeParticleSystem=SmallGreySSys
 
 [NASAM]
 ROT=8
-Cost=1000
+Cost=2000
 Name=Allied Patriot Missile
 Armor=steel
 Cameo=SAMICON
@@ -24989,7 +25012,7 @@ AIBasePlanningSide=0
 HasStupidGuardMode=false
 
 [NATBNK]
-Cost=400
+Cost=800
 Flat=yes
 Name=Yuri Tank Bunker
 Armor=steel
@@ -25054,7 +25077,7 @@ SpecialAnimThreeDamaged=NATBNK_A2D
 SpecialAnimThreeZAdjust=-500
 
 [NATECH]
-Cost=2000
+Cost=4000
 Name=Soviet Battle Lab
 Armor=wood
 Cameo=NTCHICON
@@ -25100,7 +25123,7 @@ DemandLoadBuildup=true
 AIBasePlanningSide=1
 
 [NAWALL]
-Cost=100
+Cost=200
 Name=Soviet Wall
 Wall=yes
 Armor=concrete
@@ -25130,7 +25153,7 @@ AIBasePlanningSide=1
 
 [NAWEAP]
 Bib=yes
-Cost=2000
+Cost=4000
 Name=Soviet War Factory
 Armor=wood
 Cameo=NWEPICON
@@ -25196,7 +25219,7 @@ RoofDeployingAnimDamaged=NAWEAP_4D
 UnderRoofDoorAnimDamaged=NAWEAP_3D
 
 [NAYARD]
-Cost=1000
+Cost=2000
 Name=Soviet Shipyard
 Armor=concrete
 Cameo=YARDICON
@@ -25359,7 +25382,7 @@ SubjectToElevation=no
 ROF=120
 Range=5
 Speed=100
-Damage=8
+Damage=16
 Report=ChronoLegionAttack
 Warhead=ChronoBeam
 IsRadBeam=yes
@@ -25369,7 +25392,7 @@ Projectile=InvisibleMedium
 ROF=120
 Range=5
 Speed=100
-Damage=16
+Damage=32
 Report=ChronoLegionAttack
 Warhead=ChronoBeam
 IsRadBeam=yes
@@ -25377,7 +25400,7 @@ Projectile=InvisibleLow
 
 [Normal]
 ROF=1.0
-Cost=1.0
+Cost=2.0
 Armor=1.0
 Airspeed=1.0
 BuildTime=1
@@ -25414,7 +25437,7 @@ NukeMaker=yes
 [NukePayload]
 Range=30
 Speed=10
-Damage=600
+Damage=1200
 Report=
 Warhead=NUKE
 RadLevel=500
@@ -25443,7 +25466,7 @@ DisableableFromShell=yes
 ROF=1
 Range=1.0
 Speed=100
-Damage=1500
+Damage=3000
 Warhead=NUKE
 RadLevel=500
 Projectile=InvisibleLow
@@ -25457,7 +25480,7 @@ Inviso=yes
 ROF=80
 Range=8
 Speed=100
-Damage=300
+Damage=600
 Report=TeslaCoilSuper
 Warhead=Electric
 Projectile=InvisibleHigh
@@ -25467,7 +25490,7 @@ IsAlternateColor=true
 [ORCA]
 ROT=3
 Ammo=1
-Cost=1200
+Cost=2400
 Dock=GAAIRC,AMRADR
 Name=Intruder
 Armor=light
@@ -25485,7 +25508,7 @@ DieSound=
 Landable=yes
 OmniFire=yes
 PipScale=Ammo
-Strength=45000
+Strength=1500
 AuxSound1=IntruderTakeOff
 AuxSound2=IntruderLanding
 Explosion=TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60
@@ -25551,7 +25574,7 @@ DeformThreshhold=160
 
 [OilExplosion]
 Anim=RING1
-Damage=600
+Damage=1200
 Warhead=OilExplosionWH
 Projectile=Invisible
 
@@ -25587,7 +25610,7 @@ ROF=60
 Anim=MGUN-N,MGUN-NE,MGUN-E,MGUN-SE,MGUN-S,MGUN-SW,MGUN-W,MGUN-NW
 Range=4
 Speed=100
-Damage=20
+Damage=40
 Report=TechOutpostAttack
 Warhead=SA
 Projectile=InvisibleLow
@@ -25870,7 +25893,7 @@ LegalTarget=true
 
 [PCV]
 ROT=5
-Cost=3000
+Cost=6000
 Name=Yuri Construction Vehicle
 Size=6
 Armor=heavy
@@ -25957,7 +25980,7 @@ DamageParticleSystems=SparkSys,SmallGreySSys
 [PEBBLE]
 Name=TiberiumShard
 Image=MTRB
-Damage=20
+Damage=40
 MaxZVel=45.0
 MinZVel=40.0
 Warhead=TankOGas
@@ -25972,7 +25995,7 @@ MinAngularVelocity=12.0
 
 [PENTGEN]
 Pip=white
-Cost=10
+Cost=20
 Name=General Pentagon
 Size=1
 Armor=none
@@ -26059,7 +26082,7 @@ AllowedToStartInMultiplayer=no
 
 [PIECE]
 Name=Scrap Metal Debris
-Damage=5
+Damage=10
 MaxZVel=28.0
 MinZVel=24.0
 Warhead=TankOGas
@@ -26080,7 +26103,7 @@ ProneDamage=80%
 
 [POLARB]
 Pip=yellow
-Cost=10
+Cost=20
 Name=Animal Polar Bear
 Size=2
 Armor=none
@@ -26138,7 +26161,7 @@ TemperateOccupationBits=4
 
 [PRES]
 Pip=yellow
-Cost=10
+Cost=20
 Name=President
 Size=1
 Armor=none
@@ -26229,7 +26252,7 @@ AllowedToStartInMultiplayer=no
 [PTROOP]
 C4=yes
 Pip=red
-Cost=1000
+Cost=2000
 Name=Psi-Corp Trooper
 Armor=none
 Cameo=PSICICON
@@ -26353,7 +26376,7 @@ ROF=15
 Anim=MGUN-N,MGUN-NE,MGUN-E,MGUN-SE,MGUN-S,MGUN-SW,MGUN-W,MGUN-NW
 Range=5
 Speed=100
-Damage=25
+Damage=50
 Report=GIAttackDeployed
 Warhead=SSA
 Projectile=InvisibleLow
@@ -26379,7 +26402,7 @@ ROF=130
 Burst=1
 Range=4
 Speed=30
-Damage=60
+Damage=120
 Warhead=MaverickHE
 Projectile=AAHeatSeeker2
 
@@ -26387,7 +26410,7 @@ Projectile=AAHeatSeeker2
 ROF=15
 Range=6
 Speed=100
-Damage=25
+Damage=50
 Report=GIAttackDeployed
 Warhead=SSA
 Projectile=InvisibleLow
@@ -26458,7 +26481,7 @@ Rate=.016
 ROF=20
 Range=3
 Speed=100
-Damage=2
+Damage=4
 Report=CivAttack
 Warhead=SA
 Projectile=InvisibleLow
@@ -26498,7 +26521,7 @@ Invulnerability=0,ARMOR,yes,1.0
 ROF=45
 Range=8
 Speed=100
-Damage=120
+Damage=240
 Report=PrismTowerAttack
 IsLaser=true
 Warhead=PrismWarhead
@@ -26511,7 +26534,7 @@ LaserOuterSpread=0,0,0
 ROF=45
 Range=8
 Speed=100
-Damage=200
+Damage=400
 IsLaser=true
 Warhead=DummyWarhead
 Projectile=InvisibleHigh
@@ -26528,7 +26551,7 @@ InfDeath=5
 ROF=3
 Range=5
 Speed=30
-Damage=30
+Damage=60
 Report=scrin5b
 Warhead=HE
 Projectile=ProtonTorpedo
@@ -26562,7 +26585,7 @@ ROF=50
 Anim=RING1
 Range=1
 Speed=1
-Damage=250
+Damage=500
 Report=YuriDeploy
 Warhead=PsiPulse
 AreaFire=yes
@@ -26573,7 +26596,7 @@ Projectile=Psychic
 Image=TXGASR
 MaxDC=20
 MaxEC=50
-Damage=600
+Damage=1200
 Warhead=PsychGas
 EndStateAI=20
 StartFrame=0
@@ -26586,7 +26609,7 @@ StateAIAdvance=4
 Image=TXGASR
 MaxDC=60
 MaxEC=50
-Damage=10
+Damage=20
 Warhead=PsychGas
 EndStateAI=20
 StartFrame=0
@@ -26645,7 +26668,7 @@ DisableableFromShell=yes
 ROF=15
 Range=4.5
 Speed=100
-Damage=25
+Damage=50
 Report=InitiateAttack
 Warhead=SAFlame
 Projectile=InvisibleLow
@@ -26656,7 +26679,7 @@ OpenToppedAnim=GUNFIRE
 ROF=15
 Range=6
 Speed=100
-Damage=30
+Damage=60
 Report=InitiateAttack
 Warhead=SAFlame
 Projectile=InvisibleLow
@@ -26686,7 +26709,7 @@ Image=PULSBALL
 ROF=60
 Range=1.4
 Speed=100
-Damage=100
+Damage=200
 Report=BruteSmashAttack
 Warhead=Battering
 Projectile=InvisibleLow
@@ -26696,7 +26719,7 @@ FireInTransport=no
 ROF=60
 Range=1.4
 Speed=100
-Damage=100
+Damage=200
 Report=BruteSmashAttack
 Warhead=Battering
 Projectile=InvisibleLow
@@ -26710,7 +26733,7 @@ ROF=40
 Anim=MGUN-N,MGUN-NE,MGUN-E,MGUN-SE,MGUN-S,MGUN-SW,MGUN-W,MGUN-NW
 Range=6
 Speed=100
-Damage=35
+Damage=70
 Report=FlakTrackAttackGround
 Warhead=SA
 Projectile=QuadShell
@@ -26778,7 +26801,7 @@ PercentAtMax=.5
 
 [RMNV]
 Pip=yellow
-Cost=10
+Cost=20
 Name=Romanov
 Size=1
 Armor=none
@@ -26822,7 +26845,7 @@ AllowedToStartInMultiplayer=no
 
 [ROBO]
 ROT=5
-Cost=600
+Cost=1200
 Name=Robot Tank
 Size=3
 Armor=heavy
@@ -26842,7 +26865,7 @@ AltCameo=ROBOUICO
 Category=AFV
 DieSound=RobotTankDie
 IsTilter=yes
-Strength=54000
+Strength=1800
 Explosion=TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60
 Locomotor={4A582742-9839-11d1-B709-00A024DDAFD1}
 MaxDebris=2
@@ -26892,7 +26915,7 @@ Conventional=yes
 ROF=80
 Range=8
 Speed=30
-Damage=110
+Damage=220
 Report=GLNCH4
 Warhead=RPG
 Projectile=Lobbed2
@@ -26916,7 +26939,7 @@ Radiation=yes
 ROF=50
 Range=6
 Speed=100
-Damage=125
+Damage=250
 Report=DesolatorAttack
 Warhead=RadBeamWarhead
 IsRadBeam=yes
@@ -26926,7 +26949,7 @@ Projectile=InvisibleLow
 ROF=50
 Range=8
 Speed=100
-Damage=200
+Damage=400
 Report=DesolatorAttack
 Warhead=RadBeamWarhead
 IsRadBeam=yes
@@ -26943,7 +26966,7 @@ CellSpread=10
 ROF=60
 Range=4
 Speed=1
-Damage=1
+Damage=2
 Report=DesolatorDeploy
 Warhead=RadEruptionWarhead
 AreaFire=yes
@@ -26974,7 +26997,7 @@ ROF=55
 Anim=MGUN-N,MGUN-NE,MGUN-E,MGUN-SE,MGUN-S,MGUN-SW,MGUN-W,MGUN-NW
 Range=4
 Speed=100
-Damage=40
+Damage=80
 Report=PillboxAttack
 Warhead=SA
 Projectile=InvisibleLow
@@ -27005,7 +27028,7 @@ FloatBeach=0%
 ROF=55
 Range=12
 Speed=100
-Damage=75
+Damage=150
 Report=PatriotAttack
 Warhead=SAMWH
 Projectile=AAHeatSeeker
@@ -27018,7 +27041,7 @@ Rate=.08
 ROF=80
 Range=1.8
 Speed=100
-Damage=-50
+Damage=-100
 Report=IFVRepair
 Warhead=Mechanical
 Projectile=Invisible
@@ -27060,7 +27083,7 @@ Anim=GUNFIRE
 Range=5
 Speed=60
 Bright=yes
-Damage=65
+Damage=130
 Report=RobotTankAttack
 Warhead=AP
 Projectile=Cannon
@@ -27098,7 +27121,7 @@ Anim=GUNFIRE
 Range=5
 Speed=60
 Bright=yes
-Damage=150
+Damage=300
 Report=TankDestroyerAttack
 Warhead=UltraAP
 Projectile=Cannon
@@ -27110,7 +27133,7 @@ Burst=2
 Range=6.75
 Speed=60
 Bright=yes
-Damage=175
+Damage=350
 Report=TankDestroyerAttack
 Warhead=UltraAPE
 Projectile=Cannon
@@ -27139,7 +27162,7 @@ ProneDamage=70%
 
 [SAPC]
 ROT=5
-Cost=900
+Cost=1800
 Name=Armored Transport
 Size=15
 Armor=heavy
@@ -27192,7 +27215,7 @@ AllowedToStartInMultiplayer=no
 
 [SCHD]
 ROT=5
-Cost=1000
+Cost=2000
 Name=ZZZ Deployed Soviet Siege Chopper
 Size=15
 Armor=light
@@ -27277,7 +27300,7 @@ DeformThreshhold=120
 
 [SCHP]
 ROT=5
-Cost=1400
+Cost=2800
 Name=Soviet Siege Chopper
 Size=15
 Armor=light
@@ -27296,7 +27319,7 @@ Soylent=1400
 AltCameo=SCHPUICO
 Category=AirPower
 DieSound=
-Strength=90000
+Strength=3000
 Crashable=yes
 Explosion=TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60
 Locomotor={92612C46-F71F-11d1-AC9F-006008055BB5}
@@ -27353,7 +27376,7 @@ AllowedToStartInMultiplayer=no
 
 [SENGINEER]
 Pip=Blue
-Cost=500
+Cost=1000
 Name=Soviet Engineer
 Size=1
 Armor=none
@@ -27398,7 +27421,7 @@ AllowedToStartInMultiplayer=no
 
 [SHAD]
 ROT=5
-Cost=1000
+Cost=2000
 Name=BlackHawk Transport
 Size=15
 Armor=light
@@ -27417,7 +27440,7 @@ Category=AirPower
 DieSound=
 Landable=yes
 PipScale=Passengers
-Strength=52500
+Strength=1750
 Crashable=yes
 Explosion=TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60
 Locomotor={92612C46-F71F-11d1-AC9F-006008055BB5}
@@ -27471,7 +27494,7 @@ AllowedToStartInMultiplayer=no
 
 [SHK]
 Pip=white
-Cost=500
+Cost=1000
 Name=Shock Trooper
 Size=1
 Armor=Plate
@@ -27490,7 +27513,7 @@ AltCameo=SHKUICO
 Category=Soldier
 DieSound=TeslaTroopDie
 Sequence=ConSequence
-Strength=39000
+Strength=1300
 Assaulter=no
 Crushable=no
 Locomotor={4A582744-9839-11d1-B709-00A024DDAFD1}
@@ -27520,7 +27543,7 @@ AllowedToStartInMultiplayer=no
 ROF=30
 Range=1.5
 Speed=100
-Damage=30
+Damage=60
 Report=
 Warhead=SA
 Projectile=InvisibleLow
@@ -27582,7 +27605,7 @@ TemperateOccupationBits=4
 
 [SLAV]
 Pip=white
-Cost=10
+Cost=20
 Name=Yuri Slave Worker
 Size=1
 Armor=none
@@ -27604,7 +27627,7 @@ Category=Soldier
 DieSound=SlaveWorkerDie
 PipScale=Tiberium
 Sequence=SlaveSequence
-Strength=37500
+Strength=1250
 DontScore=yes
 Locomotor={4A582744-9839-11d1-B709-00A024DDAFD1}
 Remapable=yes
@@ -27631,7 +27654,7 @@ AllowedToStartInMultiplayer=no
 
 [SMCV]
 ROT=5
-Cost=3000
+Cost=6000
 Name=Soviet Construction Vehicle
 Size=6
 Armor=heavy
@@ -27676,7 +27699,7 @@ DamageParticleSystems=SparkSys,SmallGreySSys
 
 [SMIN]
 ROT=5
-Cost=1500
+Cost=3000
 Name=Slave Miner
 Size=3
 Armor=medium
@@ -27699,7 +27722,7 @@ AltCameo=SMINUICO
 Category=Support
 DieSound=GenVehicleDie
 Enslaves=SLAV
-Strength=600000
+Strength=20000
 Explosion=TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60
 Locomotor={4A582741-9839-11d1-B709-00A024DDAFD1}
 MaxDebris=6
@@ -27752,7 +27775,7 @@ AllowedToStartInMultiplayer=no
 
 [SMON]
 ROT=5
-Cost=1400
+Cost=2800
 Dock=NAREFN,GAREFN
 Name=ZZZ Useless
 Armor=medium
@@ -27795,7 +27818,7 @@ AllowedToStartInMultiplayer=no
 
 [SNIPE]
 Pip=red
-Cost=600
+Cost=1200
 Name=Sniper
 Size=1
 Armor=none
@@ -27815,7 +27838,7 @@ Bombable=yes
 Category=Soldier
 DieSound=SniperDie
 Sequence=ConSequence
-Strength=37500
+Strength=1250
 Locomotor={4A582744-9839-11d1-B709-00A024DDAFD1}
 Remapable=yes
 TechLevel=1
@@ -27939,7 +27962,7 @@ DamageParticleSystems=SparkSys,LGSparkSys
 
 [SONICTURRET]
 Name=Disruptor Turret
-Damage=90
+Damage=180
 MaxZVel=38.0
 MinZVel=30.0
 Warhead=TankOGas
@@ -27964,7 +27987,7 @@ TemperateOccupationBits=4
 
 [SPY]
 Pip=blue
-Cost=1000
+Cost=2000
 Name=Spy
 Agent=yes
 Armor=flak
@@ -28054,7 +28077,7 @@ DeathWeaponDamageModifier=.1
 
 [SQD]
 ROT=40
-Cost=1000
+Cost=2000
 Name=Giant Squid
 Size=30
 Armor=true
@@ -28120,7 +28143,7 @@ SubjectToElevation=no
 
 [SREF]
 ROT=5
-Cost=1200
+Cost=2400
 Name=Prism Tank
 Size=3
 Armor=light
@@ -28140,7 +28163,7 @@ AltCameo=SREFUICO
 Category=AFV
 DieSound=GenVehicleDie
 IsTilter=yes
-Strength=45000
+Strength=1500
 Explosion=TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60
 Locomotor={4A582741-9839-11d1-B709-00A024DDAFD1}
 Maxdebris=3
@@ -28245,7 +28268,7 @@ ProneDamage=50%
 
 [SSRV]
 Pip=white
-Cost=10
+Cost=20
 Name=Secret Service
 Size=1
 Armor=none
@@ -28286,7 +28309,7 @@ AllowedToStartInMultiplayer=no
 ROF=10
 Range=6
 Speed=100
-Damage=10000
+Damage=20000
 Report=SlyGrenadeLauncher
 Warhead=NukeB
 Projectile=Cannon
@@ -28296,7 +28319,7 @@ AssaultAnim=UCBLOOD
 ROF=10
 Range=6
 Speed=100
-Damage=125
+Damage=250
 Report=SlyAttack
 Warhead=HollowPoint4
 Projectile=InvisibleLow
@@ -28351,7 +28374,7 @@ AllowedToStartInMultiplayer=no
 
 [STLN]
 Pip=yellow
-Cost=10
+Cost=20
 Name=Sammy Stallion
 Size=1
 Armor=plate
@@ -28397,7 +28420,7 @@ AllowedToStartInMultiplayer=no
 
 [SUB]
 ROT=2
-Cost=1000
+Cost=2000
 Name=Typhoon Attack Sub
 Size=20
 Armor=heavy
@@ -28549,7 +28572,7 @@ Recruitable=no
 [Sapper]
 ROF=100
 Range=1.5
-Damage=2500
+Damage=5000
 Report=SealPlaceBomb
 Warhead=Mechanical
 Projectile=Invisible
@@ -28590,7 +28613,7 @@ Recruitable=no
 ROF=80
 Range=1.3
 Speed=25
-Damage=100
+Damage=200
 Report=VICER1
 Warhead=Slimer
 Projectile=Invisible
@@ -28659,7 +28682,7 @@ SubjectToElevation=yes
 ROF=60
 Range=1.1
 Speed=100
-Damage=100
+Damage=200
 Report=BruteSmashAttack
 Warhead=Smashing
 Projectile=InvisibleLow
@@ -28669,7 +28692,7 @@ FireInTransport=no
 ROF=60
 Range=1.1
 Speed=100
-Damage=100
+Damage=200
 Report=BruteSmashAttack
 Warhead=Smashing
 Projectile=InvisibleLow
@@ -28740,7 +28763,7 @@ MakesDisguise=yes
 ROF=20
 Range=8
 Speed=100
-Damage=150
+Damage=300
 Report=SILENCER
 Warhead=HollowPoint
 Projectile=InvisibleLow
@@ -28762,7 +28785,7 @@ PercentAtMax=1
 ROF=120
 Range=6
 Speed=100
-Damage=4
+Damage=8
 Report=DolphinAttack
 IsSonic=Yes
 Warhead=SonicWarhead
@@ -28775,7 +28798,7 @@ ROF=80
 Burst=2
 Range=6
 Speed=100
-Damage=8
+Damage=16
 Report=DolphinAttack
 IsSonic=Yes
 Warhead=SonicWarhead
@@ -28813,7 +28836,7 @@ MutateExplosionWarhead=MutateExplosion
 [SpyCameraWeapon]
 Burst=1
 Range=20
-Damage=6
+Damage=12
 Report=SpyPlaneSnapshot
 Warhead=DummyWarhead
 Projectile=InvisibleHigh
@@ -28839,7 +28862,7 @@ ROF=99
 Anim=SQDG_N,SQDG_NE,SQDG_E,SQDG_SE,SQDG_S,SQDG_SW,SQDG_W,SQDG_NW
 Range=1.5
 Speed=30
-Damage=15
+Damage=30
 Report=SquidAttack
 Warhead=ParasitePlus
 Projectile=SQDJUMP
@@ -28852,7 +28875,7 @@ ROF=99
 Anim=SQDG_N,SQDG_NE,SQDG_E,SQDG_SE,SQDG_S,SQDG_SW,SQDG_W,SQDG_NW
 Range=1.5
 Speed=30
-Damage=40
+Damage=80
 Report=SquidAttack
 Warhead=ParasitePlus
 Projectile=SQDJUMP
@@ -28864,7 +28887,7 @@ CellRangefinding=yes
 ROF=32
 Range=1.83
 Speed=30
-Damage=100
+Damage=200
 Report=SquidAttackNonShip
 Warhead=HE
 Projectile=InvisibleLow
@@ -28873,7 +28896,7 @@ Projectile=InvisibleLow
 ROF=32
 Range=1.83
 Speed=30
-Damage=200
+Damage=400
 Report=SquidAttackNonShip
 Warhead=HE
 Projectile=InvisibleAll
@@ -28888,7 +28911,7 @@ Recruitable=no
 ROF=120
 Range=7
 Speed=25
-Damage=100
+Damage=200
 Report=SubAttack
 Warhead=APSplash
 Projectile=Torpedo
@@ -28899,7 +28922,7 @@ ROF=120
 Burst=2
 Range=7
 Speed=18
-Damage=100
+Damage=200
 Report=SubAttack
 Warhead=APSplash
 Projectile=Torpedo
@@ -28910,7 +28933,7 @@ ROF=1
 Range=.5
 Speed=0
 Bright=yes
-Damage=11000
+Damage=22000
 Report=HUNTER2
 Warhead=HE
 Projectile=Invisible
@@ -28929,7 +28952,7 @@ ROF=100
 Range=10
 Speed=10
 Bright=yes
-Damage=150
+Damage=300
 Report=PrismTankAttack
 IsLaser=true
 Warhead=CometWH
@@ -28943,7 +28966,7 @@ ROF=100
 Range=5
 Speed=10
 Bright=yes
-Damage=50
+Damage=100
 Report=
 IsLaser=true
 Warhead=CometWH
@@ -28966,7 +28989,7 @@ ROF=200
 Anim=YURICNTL
 Range=7
 Speed=100
-Damage=1
+Damage=2
 Warhead=ControllerBuilding
 FireOnce=yes
 Projectile=PsychicControl
@@ -28984,7 +29007,7 @@ ROF=50
 Anim=RING1
 Range=1
 Speed=1
-Damage=250
+Damage=500
 Report=YuriDeploy
 Warhead=SuperPsiPulse
 AreaFire=yes
@@ -29017,7 +29040,7 @@ SubjectToElevation=no
 [TANY]
 C4=yes
 Pip=red
-Cost=1500
+Cost=3000
 Name=Tanya
 Size=1
 Armor=flak
@@ -29036,7 +29059,7 @@ AltCameo=TANYUICO
 Category=Soldier
 DieSound=TanyaPrimeDie
 Sequence=TanyaSequence
-Strength=20000
+Strength=2000
 Assaulter=no
 Crushable=no
 Locomotor={4A582744-9839-11d1-B709-00A024DDAFD1}
@@ -29124,7 +29147,7 @@ AllowedToStartInMultiplayer=no
 
 [TELE]
 ROT=5
-Cost=1000
+Cost=2000
 Name=Magnetron
 Size=6
 Armor=light
@@ -29144,7 +29167,7 @@ AltCameo=TELEUICO
 Category=AFV
 DieSound=GenVehicleDie
 IsTilter=yes
-Strength=45000
+Strength=1500
 Explosion=TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60
 Locomotor={4A582741-9839-11d1-B709-00A024DDAFD1}
 Maxdebris=3
@@ -29278,7 +29301,7 @@ DamageParticleSystems=SparkSys,LGSparkSys
 ROF=5
 Range=6
 Speed=100
-Damage=125
+Damage=250
 Report=ArnoldAttack
 Warhead=HollowPoint
 Projectile=InvisibleLow
@@ -29286,7 +29309,7 @@ AssaultAnim=UCBLOOD
 
 [TERROR]
 Pip=red
-Cost=200
+Cost=400
 Name=Terrorist
 Armor=flak
 Image=TRST
@@ -29301,7 +29324,7 @@ Soylent=100
 Category=Soldier
 DieSound=TerroristDie
 Explodes=yes
-Strength=22500
+Strength=750
 Locomotor={4A582744-9839-11d1-B709-00A024DDAFD1}
 TechLevel=5
 Trainable=no
@@ -29324,7 +29347,7 @@ VoiceSpecialAttack=TerroristAttackCommand
 AllowedToStartInMultiplayer=no
 
 [TESLA]
-Cost=1500
+Cost=3000
 Name=Soviet Tesla Coil
 Armor=steel
 Image=NATSLA
@@ -29925,7 +29948,7 @@ MinAngularVelocity=12.0
 
 [TNKD]
 ROT=5
-Cost=900
+Cost=1800
 Name=Tank Destroyer
 Size=3
 Armor=heavy
@@ -29944,7 +29967,7 @@ AltCameo=TNKDUICO
 Category=AFV
 DieSound=GenVehicleDie
 IsTilter=yes
-Strength=120000
+Strength=4000
 Explosion=TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60
 Locomotor={4A582741-9839-11d1-B709-00A024DDAFD1}
 MaxDebris=2
@@ -30650,7 +30673,7 @@ AllowedToStartInMultiplayer=no
 ROF=30
 Range=1.5
 Speed=100
-Damage=200
+Damage=400
 Report=TrexAttack
 Warhead=TRexWH
 Projectile=InvisibleLow
@@ -30660,7 +30683,7 @@ CellRangefinding=yes
 ROF=30
 Range=1.5
 Speed=100
-Damage=200
+Damage=400
 Report=TrexAttack
 Warhead=TRexInfWH
 Projectile=InvisibleLow
@@ -30710,7 +30733,7 @@ DamageParticleSystems=SparkSys
 
 [TTNK]
 ROT=5
-Cost=1200
+Cost=2400
 Name=Tesla Tank
 Size=3
 Armor=heavy
@@ -30730,7 +30753,7 @@ AltCameo=TTNKUICO
 Category=AFV
 DieSound=GenVehicleDie
 IsTilter=yes
-Strength=90000
+Strength=3000
 Explosion=TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60
 Locomotor={4A582741-9839-11d1-B709-00A024DDAFD1}
 Maxdebris=3
@@ -30817,7 +30840,7 @@ AllowedToStartInMultiplayer=no
 ROF=75
 Range=4
 Speed=100
-Damage=135
+Damage=270
 Report=TeslaTankAttack
 Warhead=Electric
 Projectile=InvisibleLow
@@ -30827,7 +30850,7 @@ IsElectricBolt=true
 ROF=60
 Range=6
 Speed=100
-Damage=150
+Damage=300
 Report=TeslaTankAttack
 Warhead=Electric
 Projectile=Electricbounce
@@ -30837,7 +30860,7 @@ IsElectricBolt=true
 ROF=100
 Range=-2
 Speed=100
-Damage=1
+Damage=2
 Report=MirageTankDisguise
 Warhead=TankSnapshot
 FireOnce=yes
@@ -30947,7 +30970,7 @@ MakesDisguise=yes
 ROF=10
 Anim=RING1
 Range=1.5
-Damage=225
+Damage=450
 Suicide=yes
 Warhead=TerrorBombWH
 Projectile=Invisible
@@ -30968,7 +30991,7 @@ ROF=80
 Anim=PIFFPIFF
 Range=3
 Speed=10
-Damage=30
+Damage=60
 Report=TeslaCoilAttack
 Warhead=Electric
 Projectile=SmallTeslaP
@@ -31037,7 +31060,7 @@ FloatBeach=0%
 ROF=20
 Range=6
 Speed=100
-Damage=30
+Damage=60
 Report=SovietOccupiedAttack
 Warhead=SSAB
 Projectile=InvisibleHigh
@@ -31048,7 +31071,7 @@ ROF=15
 Anim=MGUN-N,MGUN-NE,MGUN-E,MGUN-SE,MGUN-S,MGUN-SW,MGUN-W,MGUN-NW
 Range=6
 Speed=100
-Damage=40
+Damage=80
 Report=AlliedOccupiedAttack
 Warhead=SSAB
 Projectile=InvisibleHigh
@@ -31058,7 +31081,7 @@ OccupantAnim=UCFLASH
 ROF=15
 Range=6
 Speed=100
-Damage=73
+Damage=146
 Report=InitiateAttack
 Warhead=SSABFlame
 Projectile=InvisibleHigh
@@ -31068,7 +31091,7 @@ OccupantAnim=UCINIT
 ROF=20
 Range=6
 Speed=100
-Damage=20
+Damage=40
 Report=SovietOccupiedAttack
 Warhead=SSAB
 Projectile=InvisibleHigh
@@ -31079,7 +31102,7 @@ ROF=15
 Anim=MGUN-N,MGUN-NE,MGUN-E,MGUN-SE,MGUN-S,MGUN-SW,MGUN-W,MGUN-NW
 Range=6
 Speed=100
-Damage=30
+Damage=60
 Report=AlliedOccupiedAttack
 Warhead=SSAB
 Projectile=InvisibleHigh
@@ -31089,7 +31112,7 @@ OccupantAnim=UCFLASH
 ROF=15
 Range=6
 Speed=100
-Damage=63
+Damage=126
 Report=InitiateAttack
 Warhead=SSABFlame
 Projectile=InvisibleHigh
@@ -31116,7 +31139,7 @@ ExtraDamageStage=false
 
 [UTNK]
 ROT=5
-Cost=1000
+Cost=2000
 Name=ZZZ Not Used
 Size=3
 Armor=heavy
@@ -31193,7 +31216,7 @@ Recruitable=no
 
 [V3]
 ROT=5
-Cost=800
+Cost=1600
 Name=V3 Launcher
 Size=3
 Armor=light
@@ -31214,7 +31237,7 @@ Soylent=800
 AltCameo=V3UICO
 Category=AFV
 DieSound=GenVehicleDie
-Strength=45000
+Strength=1500
 Explosion=TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60
 Locomotor={4A582741-9839-11d1-B709-00A024DDAFD1}
 Maxdebris=3
@@ -31250,7 +31273,7 @@ AllowedToStartInMultiplayer=no
 
 [V3Airburst]
 Range=.55
-Damage=25
+Damage=50
 Warhead=V3HE
 Projectile=V3AirburstP
 
@@ -31269,7 +31292,7 @@ AirburstWeapon=V3Cluster
 ROF=80
 Range=6
 Speed=20
-Damage=80
+Damage=160
 Warhead=V3HE
 Projectile=ClusterBits
 
@@ -31305,7 +31328,7 @@ PercentAtMax=1
 ROF=150
 Range=18
 Speed=10
-Damage=1
+Damage=2
 Spawner=yes
 Warhead=Special
 Projectile=InvisibleHigh
@@ -31314,7 +31337,7 @@ MinimumRange=5
 [V3ROCKET]
 ROT=3
 Ammo=1
-Cost=50
+Cost=100
 Name=V3 Rocket
 Armor=special_2
 Owner=Russians,Confederation,Africans,Arabs
@@ -31393,7 +31416,7 @@ IsVeinhole=true
 
 [VIRUS]
 Pip=red
-Cost=700
+Cost=1400
 Name=Yuri Virus
 Size=1
 Armor=none
@@ -31413,7 +31436,7 @@ Bombable=yes
 Category=Soldier
 DieSound=VirusDie
 Sequence=GenericMDSequence
-Strength=30000
+Strength=1000
 Locomotor={4A582744-9839-11d1-B709-00A024DDAFD1}
 Remapable=yes
 TechLevel=1
@@ -31441,7 +31464,7 @@ AllowedToStartInMultiplayer=no
 
 [VLAD]
 ROT=1
-Cost=2500
+Cost=5000
 Name=Vladimir's Dreadnought
 Size=50
 Armor=heavy
@@ -31496,7 +31519,7 @@ AllowedToStartInMultiplayer=no
 
 [VLADIMIR]
 Pip=white
-Cost=10
+Cost=20
 Name=Vladimir
 Size=1
 Armor=none
@@ -31635,7 +31658,7 @@ SpreadPercentage=.06
 [VirtualScanner]
 Range=5
 Speed=100
-Damage=1
+Damage=2
 Warhead=SA
 NeverUse=yes
 Projectile=InvisibleAll
@@ -31651,7 +31674,7 @@ ProneDamage=100%
 Image=TXGASG
 MaxDC=30
 MaxEC=1000
-Damage=5
+Damage=10
 Warhead=VirusGas
 EndStateAI=20
 StartFrame=0
@@ -31664,7 +31687,7 @@ StateAIAdvance=4
 Image=LGRYSMK1
 MaxDC=30
 MaxEC=1000
-Damage=10
+Damage=20
 Warhead=VirusGas
 EndStateAI=20
 StartFrame=0
@@ -31677,7 +31700,7 @@ StateAIAdvance=4
 Image=TXGASG
 MaxDC=60
 MaxEC=50
-Damage=5
+Damage=10
 Warhead=VirusGas
 EndStateAI=20
 StartFrame=0
@@ -31690,7 +31713,7 @@ DeleteOnStateLimit=yes
 Image=LGRYSMK1
 MaxDC=60
 MaxEC=50
-Damage=5
+Damage=10
 Warhead=VirusGas
 EndStateAI=20
 StartFrame=0
@@ -31712,7 +31735,7 @@ PercentAtMax=1
 ROF=100
 Range=10
 Speed=100
-Damage=125
+Damage=250
 Report=VirusAttack
 Warhead=Virus
 Projectile=InvisibleLow
@@ -31723,7 +31746,7 @@ OpenToppedAnim=GUNFIRE
 ROF=80
 Range=16
 Speed=100
-Damage=125
+Damage=250
 Report=VirusAttack
 Warhead=Virus
 Projectile=InvisibleLow
@@ -31747,7 +31770,7 @@ ROF=26
 Anim=MGUN-N,MGUN-NE,MGUN-E,MGUN-SE,MGUN-S,MGUN-SW,MGUN-W,MGUN-NW
 Range=5.5
 Speed=100
-Damage=50
+Damage=100
 Report=SentryGunAttack
 Warhead=SA
 Projectile=InvisibleLow
@@ -31757,7 +31780,7 @@ ROF=26
 Anim=MGUN-N,MGUN-NE,MGUN-E,MGUN-SE,MGUN-S,MGUN-SW,MGUN-W,MGUN-NW
 Range=5.5
 Speed=100
-Damage=50
+Damage=100
 Report=PillboxAttack
 Warhead=SA
 Projectile=InvisibleLow
@@ -31767,7 +31790,7 @@ ROF=30
 Burst=3
 Range=4
 Speed=100
-Damage=10
+Damage=20
 Report=CYGUN1
 Warhead=SA
 Projectile=InvisibleLow
@@ -31778,7 +31801,7 @@ Anim=MGUN-N,MGUN-NE,MGUN-E,MGUN-SE,MGUN-S,MGUN-SW,MGUN-W,MGUN-NW
 Range=5
 Speed=100
 Bright=true
-Damage=50
+Damage=100
 Report=PillboxAttack
 Warhead=SA
 Projectile=InvisibleLow
@@ -31795,7 +31818,7 @@ RadarInvisible=yes
 
 [WEEDGUY]
 Pip=white
-Cost=300
+Cost=600
 Name=ZZZ Chem Spray Infantry
 Armor=none
 Owner=British,French,Germans,Americans,Alliance
@@ -31873,7 +31896,7 @@ AllowedToStartInMultiplayer=no
 
 [WWLF]
 Pip=yellow
-Cost=10
+Cost=20
 Name=Werewolf
 Size=1
 Armor=none
@@ -32071,7 +32094,7 @@ SpawnSparkPercentage=.4
 
 [XCOMET]
 ROT=5
-Cost=2000
+Cost=4000
 Name=Placeholder
 Size=3
 Armor=heavy
@@ -32113,7 +32136,7 @@ TooBigToFitUnderBridge=true
 AllowedToStartInMultiplayer=no
 
 [YABRCK]
-Cost=500
+Cost=1000
 Name=Yuri Barracks
 Armor=steel
 Cameo=BRCKICON
@@ -32166,7 +32189,7 @@ AIBasePlanningSide=2
 DamageParticleSystems=SparkSys,SmallGreySSys,BigGreySmokeSys
 
 [YACNST]
-Cost=3000
+Cost=6000
 Name=Yuri Construction Yard
 Armor=concrete
 Cameo=YCONICON
@@ -32221,7 +32244,7 @@ ProductionAnimZAdjust=-15
 EligibileForAllyBuilding=yes
 
 [YACOMD]
-Cost=3000
+Cost=6000
 Name=Yuri Command Center
 Armor=concrete
 Owner=British,French,Germans,Americans,Alliance,Russians,Confederation,Africans,Arabs,YuriCountry
@@ -32265,7 +32288,7 @@ DamageParticleSystems=SparkSys,SmallGreySSys,BigGreySmokeSys
 EligibileForAllyBuilding=yes
 
 [YADEPT]
-Cost=800
+Cost=1600
 Name=ZZZ Yuri Service Depot
 Armor=wood
 Image=GADEPT
@@ -32296,7 +32319,7 @@ NumberImpassableRows=1
 
 [YADOG]
 Pip=white
-Cost=200
+Cost=400
 Name=Allied Attack Dog (Yuri version)
 Size=1
 Armor=none
@@ -32345,7 +32368,7 @@ AllowedToStartInMultiplayer=no
 
 [YAGGUN]
 ROT=10
-Cost=1000
+Cost=2000
 Name=Yuri Gattling Cannon
 Armor=steel
 Cameo=GGUNICON
@@ -32440,7 +32463,7 @@ ElitePrimaryFireFLH=150,60,200
 EliteSecondaryFireFLH=150,60,200
 
 [YAGNTC]
-Cost=2500
+Cost=5000
 Name=Yuri Genetic Mutator Device
 Armor=concrete
 Cameo=GTNCICON
@@ -32506,7 +32529,7 @@ SuperAnimThreeZAdjust=-50
 SuperAnimThreePoweredEffect=true
 
 [YAGRND]
-Cost=600
+Cost=1200
 Name=Yuri Grinder
 Armor=wood
 Cameo=GRNDICON
@@ -32561,7 +32584,7 @@ SpecialAnimZAdjust=-30
 DamageParticleSystems=SparkSys,SmallGreySmokeSys,BigGreySmokeSys
 
 [YAPOWR]
-Cost=600
+Cost=1200
 Name=Yuri Bio Reactor
 Armor=wood
 Cameo=YPWRICON
@@ -32625,7 +32648,7 @@ ActiveAnimTwoDamaged=YAPOWR_BD
 ActiveAnimTwoZAdjust=-20
 
 [YAPPET]
-Cost=5000
+Cost=10000
 Name=Yuri Puppet Master
 Armor=concrete
 Cameo=PUPTICON
@@ -32744,7 +32767,7 @@ MaxNumberOccupants=10
 DeathWeaponDamageModifier=.01
 
 [YAPSYT]
-Cost=1500
+Cost=3000
 Name=Yuri Psychic Tower
 Armor=steel
 Cameo=PSYTICON
@@ -32796,7 +32819,7 @@ DemandLoadBuildup=true
 AIBasePlanningSide=2
 
 [YAREFN]
-Cost=1500
+Cost=3000
 Name=Yuri Ore Refinery
 Armor=medium
 Cameo=SMINICON
@@ -32875,7 +32898,7 @@ RefinerySmokeOffsetThree=95,-85,220
 RefinerySmokeParticleSystem=SmallGreySSys
 
 [YAROCK]
-Cost=600
+Cost=1200
 Name=Rocket Launch Pad
 Armor=wood
 Owner=British,French,Germans,Americans,Alliance,Russians,Confederation,Africans,Arabs,YuriCountry
@@ -32920,7 +32943,7 @@ DemandLoadBuildup=true
 AIBasePlanningSide=2
 
 [YATECH]
-Cost=2000
+Cost=4000
 Name=Yuri Battle Lab
 Armor=wood
 Cameo=YTCHICON
@@ -32974,7 +32997,7 @@ AIBasePlanningSide=2
 
 [YAWEAP]
 Bib=yes
-Cost=2000
+Cost=4000
 Name=Yuri War Factory
 Armor=wood
 Cameo=YWEPICON
@@ -33036,7 +33059,7 @@ NumberImpassableRows=1
 DamageParticleSystems=SparkSys,SmallGreySSys,BigGreySmokeSys
 
 [YAYARD]
-Cost=1000
+Cost=2000
 Name=Yuri Submarine Pen
 Armor=concrete
 Cameo=YYRDICON
@@ -33172,7 +33195,7 @@ AllowedToStartInMultiplayer=no
 
 [YDOG]
 Pip=white
-Cost=200
+Cost=400
 Name=Attack Dog (Yuri version)
 Size=1
 Armor=none
@@ -33248,7 +33271,7 @@ DamageParticleSystems=SparkSys,LGSparkSys
 
 [YENGINEER]
 Pip=Blue
-Cost=500
+Cost=1000
 Name=Yuri Engineer
 Size=1
 Armor=none
@@ -33299,7 +33322,7 @@ AllowedToStartInMultiplayer=no
 
 [YHVR]
 ROT=5
-Cost=900
+Cost=1800
 Name=Hover Transport Yuri
 Size=15
 Armor=heavy
@@ -33355,7 +33378,7 @@ AllowedToStartInMultiplayer=no
 
 [YTNK]
 ROT=10
-Cost=600
+Cost=1200
 Name=Gattling Tank
 Size=3
 Armor=light
@@ -33386,7 +33409,7 @@ Category=AFV
 DieSound=GenVehicleDie
 IsTilter=yes
 RateDown=50
-Strength=63000
+Strength=2100
 Explosion=TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60
 Locomotor={4A582741-9839-11d1-B709-00A024DDAFD1}
 Maxdebris=3
@@ -33448,7 +33471,7 @@ AllowedToStartInMultiplayer=no
 
 [YURI]
 Pip=red
-Cost=800
+Cost=1600
 Name=Yuri Clone
 Size=1
 Armor=none
@@ -33468,7 +33491,7 @@ Category=Soldier
 Deployer=yes
 DieSound=YuriCloneDie
 Sequence=YuriSequence
-Strength=30000
+Strength=1000
 Locomotor={4A582744-9839-11d1-B709-00A024DDAFD1}
 Remapable=yes
 Secondary=PsiWave
@@ -33502,7 +33525,7 @@ AllowedToStartInMultiplayer=no
 
 [YURIPR]
 Pip=red
-Cost=1500
+Cost=3000
 Name=Yuri Prime
 Size=1
 Armor=flak
@@ -33518,7 +33541,7 @@ Soylent=750
 Category=Soldier
 Deployer=yes
 DieSound=YuriPrimeDie
-Strength=30000
+Strength=1500
 Crushable=no
 Locomotor={4A582744-9839-11d1-B709-00A024DDAFD1}
 MoveSound=YuriPrimeMoveLoop
@@ -33556,7 +33579,7 @@ AllowedToStartInMultiplayer=no
 ROF=45
 Range=8
 Speed=100
-Damage=120
+Damage=240
 Report=PrismTowerAttack
 IsLaser=true
 Warhead=PrismWarhead
@@ -33567,7 +33590,7 @@ LaserOuterSpread=0,0,0
 
 [ZEP]
 ROT=10
-Cost=2000
+Cost=4000
 Name=Kirov Airship
 Size=50
 Armor=medium
@@ -33584,7 +33607,7 @@ Soylent=2000
 AltCameo=ZEPUICO
 Category=AirPower
 DieSound=
-Strength=600000
+Strength=20000
 AuxSound1=Dummy
 AuxSound2=Dummy
 Crashable=yes
@@ -34311,7 +34334,7 @@ Size=0,0,100,200
 675=AUgAQAFIAEABCaSosaCkraCkraSosREAAA==
 
 [01000008]
-0=1,TERROR
+0=30,TERROR
 Name=300 TERROR
 Group=-1
 
@@ -34350,7 +34373,7 @@ TransportsReturnOnUnload=no
 AreTeamMembersRecruitable=no
 
 [01000010]
-0=1,VIRUS
+0=30,VIRUS
 Name=300 virus
 Group=-1
 
@@ -34389,7 +34412,7 @@ TransportsReturnOnUnload=no
 AreTeamMembersRecruitable=no
 
 [01000016]
-0=1,CAOS
+0=30,CAOS
 Name=300 CAOS
 Group=-1
 
@@ -34428,12 +34451,12 @@ TransportsReturnOnUnload=no
 AreTeamMembersRecruitable=no
 
 [01000020]
-0=1,V3
+0=30,V3
 Name=300 V3
 Group=-1
 
 [01000023]
-0=1,E2
+0=30,E2
 Name=100 Conscripts
 Group=-1
 
@@ -34476,7 +34499,7 @@ TransportsReturnOnUnload=no
 AreTeamMembersRecruitable=no
 
 [01000026]
-0=1,INIT
+0=30,INIT
 Name=100 Initiates
 Group=-1
 
@@ -34520,8 +34543,8 @@ TransportsReturnOnUnload=no
 AreTeamMembersRecruitable=no
 
 [01000031]
-0=1,DOG
-1=1,ADOG
+0=15,DOG
+1=15,ADOG
 Name=100 dogs
 Group=-1
 
@@ -34560,7 +34583,7 @@ TransportsReturnOnUnload=no
 AreTeamMembersRecruitable=no
 
 [01000035]
-0=1,FLAKT
+0=30,FLAKT
 Name=100 flak troopers
 Group=-1
 
@@ -34599,7 +34622,7 @@ TransportsReturnOnUnload=no
 AreTeamMembersRecruitable=no
 
 [01000039]
-0=1,GGI
+0=30,GGI
 Name=150 Gaurdian GIs
 Group=-1
 
@@ -34638,27 +34661,27 @@ TransportsReturnOnUnload=no
 AreTeamMembersRecruitable=no
 
 [01000043]
-0=1,SHK
+0=30,SHK
 Name=150 Teslatroopers
 Group=-1
 
 [01000044]
-0=1,BRUTE
+0=30,BRUTE
 Name=150 Brutes
 Group=-1
 
 [01000045]
-0=1,YURI
+0=30,YURI
 Name=150 yuris
 Group=-1
 
 [01000046]
-0=1,GHOST
+0=30,GHOST
 Name=150 seals
 Group=-1
 
 [01000047]
-0=1,SNIPE
+0=30,SNIPE
 Name=150 snipers
 Group=-1
 
@@ -34833,27 +34856,27 @@ TransportsReturnOnUnload=no
 AreTeamMembersRecruitable=no
 
 [01000063]
-0=1,DRON
+0=30,DRON
 Name=150 terror drones
 Group=-1
 
 [01000064]
-0=1,LUNR
+0=10,LUNR
 Name=150 Moon
 Group=-1
 
 [01000065]
-0=1,ROBO
+0=30,ROBO
 Name=150 robot tanks
 Group=-1
 
 [01000066]
-0=1,HTK
+0=30,HTK
 Name=150 Flak tracks
 Group=-1
 
 [01000067]
-0=1,YTNK
+0=30,YTNK
 Name=150 gattling tanks
 Group=-1
 
@@ -35062,7 +35085,7 @@ TransportsReturnOnUnload=no
 AreTeamMembersRecruitable=no
 
 [01000086]
-0=1,TELE
+0=30,TELE
 Name=300 TELE
 Group=-1
 
@@ -35106,7 +35129,7 @@ AreTeamMembersRecruitable=no
 Name=Attack Power
 
 [01000090]
-0=1,MTNK
+0=30,MTNK
 Name=150 lashers
 Group=-1
 
@@ -35145,63 +35168,63 @@ TransportsReturnOnUnload=no
 AreTeamMembersRecruitable=no
 
 [01000096]
-0=1,HTNK
+0=30,HTNK
 Name=150 Rhinos
 Group=-1
 
 [01000097]
-0=1,TNKD
+0=30,TNKD
 Name=150 Tankk
 Group=-1
 
 [01000098]
-0=1,ORCA
+0=30,ORCA
 Name=grizzley specialty
 Group=-1
 
 [01000099]
-0=1,SCHP
+0=30,SCHP
 Name=150 seige choppers
 Group=-1
 
 [01000100]
-0=1,TTNK
+0=30,TTNK
 Name=150 tesla tanks
 Group=-1
 
 [01000101]
-0=1,HARV
+0=30,HARV
 Name=150 war miners
 Group=-1
 
 [01000102]
-0=1,HOWI
+0=30,HOWI
 Name=300 artillary
 Group=-1
 
 [01000103]
-0=1,MGTK
+0=30,MGTK
 Name=150 MGTK
 Group=-1
 
 [01000104]
-0=1,SREF
+0=30,SREF
 Name=300 SREF
 Group=-1
 
 [01000105]
-0=1,APOC
+0=30,APOC
 Name=150 Apocs
 Group=-1
 
 [01000106]
-0=1,BFRT
+0=30,BFRT
 Name=300 BTF
 Group=-1
 
 [01000107]
-0=1,SREF
-1=1,MGTK
+0=10,SREF
+1=10,MGTK
 2=10,TTNK
 3=10,APOC
 4=10,TELE
@@ -35618,7 +35641,7 @@ TransportsReturnOnUnload=no
 AreTeamMembersRecruitable=no
 
 [01000121]
-0=1,DTRUCK
+0=30,DTRUCK
 Name=300 BOOM
 Group=-1
 
@@ -35657,12 +35680,12 @@ TransportsReturnOnUnload=no
 AreTeamMembersRecruitable=no
 
 [01000149]
-0=1,SLAV
+0=30,SLAV
 Name=wave1 Slave
 Group=-1
 
 [01000150]
-0=1,BEAG
+0=30,BEAG
 Name=black eg
 Group=-1
 
@@ -35701,7 +35724,7 @@ TransportsReturnOnUnload=no
 AreTeamMembersRecruitable=no
 
 [01000154]
-0=1,IVAN
+0=30,IVAN
 Name=EV
 Group=-1
 
@@ -35740,7 +35763,7 @@ TransportsReturnOnUnload=no
 AreTeamMembersRecruitable=no
 
 [01000158]
-0=1,DESO
+0=30,DESO
 Name=DESO
 Group=-1
 
@@ -35813,8 +35836,8 @@ TransportsReturnOnUnload=no
 AreTeamMembersRecruitable=no
 
 [01000169]
-0=1,YURIPR
-1=1,DNOA
+0=20,YURIPR
+1=20,DNOA
 Name=YuriDio
 Group=-1
 
@@ -35853,7 +35876,7 @@ TransportsReturnOnUnload=no
 AreTeamMembersRecruitable=no
 
 [01000173]
-0=1,DISK
+0=30,DISK
 Name=300 DISC
 Group=-1
 
@@ -35892,7 +35915,7 @@ TransportsReturnOnUnload=no
 AreTeamMembersRecruitable=no
 
 [01000175]
-0=1,SMIN
+0=30,SMIN
 Name=SMIN
 Group=-1
 
@@ -35931,8 +35954,8 @@ TransportsReturnOnUnload=no
 AreTeamMembersRecruitable=no
 
 [01000179]
-0=1,TANY
-1=1,BORIS
+0=10,TANY
+1=10,BORIS
 Name=TanyaBoris
 Group=-1
 
@@ -35971,7 +35994,7 @@ TransportsReturnOnUnload=no
 AreTeamMembersRecruitable=no
 
 [01000181]
-0=1,ZEP
+0=30,ZEP
 Name=ZEP
 Group=-1
 
@@ -36010,7 +36033,7 @@ TransportsReturnOnUnload=no
 AreTeamMembersRecruitable=no
 
 [01000185]
-0=1,MIND
+0=30,MIND
 Name=300 MIND
 Group=-1
 
@@ -36049,8 +36072,8 @@ TransportsReturnOnUnload=no
 AreTeamMembersRecruitable=no
 
 [01000189]
-0=1,ORCA
-1=1,BEAG
+0=10,ORCA
+1=10,BEAG
 2=10,SHAD
 3=10,SCHP
 Name=airrush
@@ -36091,7 +36114,7 @@ TransportsReturnOnUnload=no
 AreTeamMembersRecruitable=no
 
 [01000197]
-0=1,E1
+0=30,E1
 Name=GI
 Group=-1
 
@@ -36130,7 +36153,7 @@ TransportsReturnOnUnload=no
 AreTeamMembersRecruitable=no
 
 [01000201]
-0=1,JUMPJET
+0=10,JUMPJET
 Name=rocket
 Group=-1
 
@@ -36169,7 +36192,7 @@ TransportsReturnOnUnload=no
 AreTeamMembersRecruitable=no
 
 [01000203]
-0=1,FV
+0=30,FV
 Name=IFV
 Group=-1
 
@@ -36208,7 +36231,7 @@ TransportsReturnOnUnload=no
 AreTeamMembersRecruitable=no
 
 [01000209]
-0=1,SHAD
+0=30,SHAD
 Name=SHAD
 Group=-1
 
@@ -36247,8 +36270,8 @@ TransportsReturnOnUnload=no
 AreTeamMembersRecruitable=no
 
 [01000213]
-0=1,CLEG
-1=1,CIVAN
+0=10,CLEG
+1=10,CIVAN
 2=10,PTROOP
 3=10,CCOMAND
 Name=CLEG
@@ -37199,7 +37222,7 @@ CanBeHidden=no
 Next=BURN-M
 Rate=400
 Layer=ground
-Damage=.06
+Damage=0.12
 Sticky=yes
 LoopEnd=62
 LoopCount=4
@@ -37211,7 +37234,7 @@ UseNormalLight=yes
 Next=BURN-S
 Rate=400
 Layer=ground
-Damage=.06
+Damage=0.12
 Sticky=yes
 LoopEnd=62
 LoopCount=4
@@ -37222,7 +37245,7 @@ UseNormalLight=yes
 [BURN-S]
 Rate=400
 Layer=ground
-Damage=.03
+Damage=0.06
 Sticky=yes
 LoopEnd=62
 LoopCount=4
@@ -37231,7 +37254,8 @@ Translucency=25
 UseNormalLight=yes
 
 [Basic]
-Name=zongtong2.0 - Muhannad's version 1.3
+Name=zongtong v2.1.6 - by Muhannad Senan
+Briefing=== ZONGTONG v2.1.6 by Muhannad Senan ==@@v2.1.6: All Cost 200% + All Damage 200% (price inflation, fewer but harder-hitting player units)@v2.1.4: MSN Soldier +20% (Strength, Damage, Cost)@v2.1.3: Units 10x tankier + 10x fewer per wave + slower spawns@@Inspired by Palestinian resistance to Israeli violence and genocide. FREE PALESTINE!
 Percent=0
 GameMode=standard, meatgrind, nukewar, cooperative, teamgame
 HomeCell=98
@@ -38598,7 +38622,7 @@ UseNormalLight=yes
 
 [CRYSTAL1]
 Rate=500
-Damage=40
+Damage=80
 Bouncer=yes
 LoopEnd=14
 MinZVel=40.0
@@ -38617,7 +38641,7 @@ TiberiumSpreadRadius=0
 
 [CRYSTAL2]
 Rate=500
-Damage=40
+Damage=80
 Bouncer=yes
 LoopEnd=14
 MinZVel=40.0
@@ -38636,7 +38660,7 @@ TiberiumSpreadRadius=0
 
 [CRYSTAL3]
 Rate=500
-Damage=40
+Damage=80
 Bouncer=yes
 LoopEnd=14
 MinZVel=40.0
@@ -38656,7 +38680,7 @@ TiberiumSpreadRadius=0
 [CRYSTAL4]
 Rate=500
 Voxel=no
-Damage=40
+Damage=80
 AnimLow=0
 Bouncer=yes
 LoopEnd=14
@@ -38916,7 +38940,7 @@ FireUp=212,6,6
 FireProne=260,6,6
 
 [DBRI-WM1]
-Damage=10
+Damage=20
 Bouncer=yes
 LoopEnd=15
 MinZVel=20.0
@@ -38929,7 +38953,7 @@ RandomRate=220,600
 DamageRadius=50
 
 [DBRI-WM2]
-Damage=10
+Damage=20
 Bouncer=yes
 LoopEnd=15
 MinZVel=20.0
@@ -38942,7 +38966,7 @@ RandomRate=220,600
 DamageRadius=50
 
 [DBRI-WM3]
-Damage=10
+Damage=20
 Bouncer=yes
 LoopEnd=15
 MinZVel=20.0
@@ -38956,7 +38980,7 @@ DamageRadius=50
 
 [DBRI-WM4]
 Image=DBRI-WM1
-Damage=10
+Damage=20
 Bouncer=yes
 LoopEnd=15
 MinZVel=40.0
@@ -38970,7 +38994,7 @@ DamageRadius=50
 
 [DBRI-WM5]
 Image=DBRI-WM2
-Damage=10
+Damage=20
 Bouncer=yes
 LoopEnd=15
 MinZVel=30.0
@@ -38984,7 +39008,7 @@ DamageRadius=50
 
 [DBRI-WM6]
 Image=DBRI-WM3
-Damage=10
+Damage=20
 Bouncer=yes
 LoopEnd=15
 MinZVel=40.0
@@ -38998,7 +39022,7 @@ DamageRadius=50
 
 [DBRIS1HV]
 Image=DBRIS1SM
-Damage=10
+Damage=20
 Bouncer=yes
 LoopEnd=15
 MinZVel=40.0
@@ -39012,7 +39036,7 @@ RandomRate=220,600
 DamageRadius=50
 
 [DBRIS1LG]
-Damage=20
+Damage=40
 Bouncer=yes
 LoopEnd=15
 MinZVel=25.0
@@ -39028,7 +39052,7 @@ DamageRadius=80
 TrailerSeperation=2
 
 [DBRIS1SM]
-Damage=10
+Damage=20
 Bouncer=yes
 LoopEnd=15
 MinZVel=20.0
@@ -39043,7 +39067,7 @@ DamageRadius=50
 
 [DBRIS2HV]
 Image=DBRIS2LG
-Damage=20
+Damage=40
 Bouncer=yes
 LoopEnd=15
 MinZVel=30.0
@@ -39057,7 +39081,7 @@ RandomRate=220,600
 DamageRadius=80
 
 [DBRIS2LG]
-Damage=20
+Damage=40
 Bouncer=yes
 LoopEnd=15
 MinZVel=25.0
@@ -39071,7 +39095,7 @@ RandomRate=220,600
 DamageRadius=80
 
 [DBRIS2SM]
-Damage=10
+Damage=20
 Bouncer=yes
 LoopEnd=15
 MinZVel=20.0
@@ -39086,7 +39110,7 @@ DamageRadius=50
 
 [DBRIS3HV]
 Image=DBRIS3LG
-Damage=20
+Damage=40
 Bouncer=yes
 LoopEnd=15
 MinZVel=40.0
@@ -39100,7 +39124,7 @@ RandomRate=220,600
 DamageRadius=80
 
 [DBRIS3LG]
-Damage=20
+Damage=40
 Bouncer=yes
 LoopEnd=15
 MinZVel=25.0
@@ -39114,7 +39138,7 @@ RandomRate=220,600
 DamageRadius=80
 
 [DBRIS3SM]
-Damage=10
+Damage=20
 Bouncer=yes
 LoopEnd=15
 MinZVel=20.0
@@ -39128,7 +39152,7 @@ RandomRate=220,600
 DamageRadius=50
 
 [DBRIS4LG]
-Damage=20
+Damage=40
 Bouncer=yes
 LoopEnd=15
 MinZVel=25.0
@@ -39142,7 +39166,7 @@ RandomRate=220,600
 DamageRadius=80
 
 [DBRIS4SM]
-Damage=10
+Damage=20
 Bouncer=yes
 LoopEnd=15
 MinZVel=20.0
@@ -39156,7 +39180,7 @@ RandomRate=220,600
 DamageRadius=50
 
 [DBRIS5LG]
-Damage=20
+Damage=40
 Bouncer=yes
 LoopEnd=15
 MinZVel=25.0
@@ -39172,7 +39196,7 @@ DamageRadius=80
 TrailerSeperation=2
 
 [DBRIS5SM]
-Damage=10
+Damage=20
 Bouncer=yes
 LoopEnd=15
 MinZVel=20.0
@@ -39186,7 +39210,7 @@ RandomRate=220,600
 DamageRadius=50
 
 [DBRIS6LG]
-Damage=20
+Damage=40
 Bouncer=yes
 LoopEnd=15
 MinZVel=25.0
@@ -39200,7 +39224,7 @@ RandomRate=220,600
 DamageRadius=80
 
 [DBRIS6SM]
-Damage=10
+Damage=20
 Bouncer=yes
 LoopEnd=15
 MinZVel=20.0
@@ -39214,7 +39238,7 @@ RandomRate=220,600
 DamageRadius=50
 
 [DBRIS7LG]
-Damage=20
+Damage=40
 Bouncer=yes
 LoopEnd=15
 MinZVel=25.0
@@ -39228,7 +39252,7 @@ RandomRate=220,600
 DamageRadius=80
 
 [DBRIS7SM]
-Damage=10
+Damage=20
 Bouncer=yes
 LoopEnd=15
 MinZVel=20.0
@@ -39242,7 +39266,7 @@ RandomRate=220,600
 DamageRadius=50
 
 [DBRIS8LG]
-Damage=20
+Damage=40
 Bouncer=yes
 LoopEnd=15
 MinZVel=25.0
@@ -39258,7 +39282,7 @@ DamageRadius=80
 TrailerSeperation=2
 
 [DBRIS8SM]
-Damage=10
+Damage=20
 Bouncer=yes
 LoopEnd=15
 MinZVel=20.0
@@ -39272,7 +39296,7 @@ RandomRate=220,600
 DamageRadius=50
 
 [DBRIS9LG]
-Damage=20
+Damage=40
 Bouncer=yes
 LoopEnd=15
 MinZVel=25.0
@@ -39286,7 +39310,7 @@ RandomRate=220,600
 DamageRadius=80
 
 [DBRIS9SM]
-Damage=10
+Damage=20
 Bouncer=yes
 LoopEnd=15
 MinZVel=20.0
@@ -39300,7 +39324,7 @@ RandomRate=220,600
 DamageRadius=50
 
 [DBRS10LG]
-Damage=20
+Damage=40
 Bouncer=yes
 LoopEnd=15
 MinZVel=25.0
@@ -39314,7 +39338,7 @@ RandomRate=220,600
 DamageRadius=80
 
 [DBRS10SM]
-Damage=10
+Damage=20
 Bouncer=yes
 LoopEnd=15
 MinZVel=20.0
@@ -39673,7 +39697,7 @@ StartSound=BuildingFireMed
 [FIRE3]
 Rate=450
 Layer=ground
-Damage=.003
+Damage=0.006
 LoopCount=5
 Translucency=50
 UseNormalLight=yes
@@ -41528,7 +41552,7 @@ Image=FIRE01
 
 [INVISO]
 Layer=ground
-Damage=1
+Damage=2
 
 [IONBEAM]
 Flat=true
@@ -43173,7 +43197,7 @@ LineTrailColorDecrement=12
 
 [METDEBRI]
 Rate=500
-Damage=40
+Damage=80
 Report=METHIT1
 Bouncer=yes
 LoopEnd=8
@@ -43190,7 +43214,7 @@ DamageRadius=100
 TiberiumSpawnType=TIB01
 
 [METLARGE]
-Damage=5000000
+Damage=10000000
 Report=METEOR1
 Spawns=METDEBRI
 LoopEnd=8
@@ -43216,7 +43240,7 @@ LoopCount=1
 LoopStart=0
 
 [METSMALL]
-Damage=5000000
+Damage=10000000
 Report=METEOR2
 Spawns=METDEBRI
 LoopEnd=8
@@ -47279,7 +47303,27 @@ WetAttack=169,6,6
 [ZBOMB]
 Voxel=yes
 
+; ============================================
+; MSN SOLDIER BUFF +20% (v2.1.4 by Muhannad)
+; ============================================
 
+[MsnA]
+Strength=360
+Cost=12000
+
+[MsnS]
+Strength=360
+Cost=12000
+
+[MsnY]
+Strength=360
+Cost=12000
+
+[MsnPriWeapon]
+Damage=2400
+
+[MsnPriWeaponE]
+Damage=2400
 
 [Digest]
 1=MAYVqKRRpYxsBB4z1DOqHiJdM9M=
